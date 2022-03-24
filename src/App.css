@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+* {
+  outline: none !important;
+}
+::selection {
+  color: white !important;
+  background-color: #00b7ff !important;
+}
+body, .text-cyan-500, br {
+  font-family: 'Inter', sans-serif !important;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+.bg-slate-700 {
+  background-color: #232530 !important;
+}
+.col-span-1 {
+  -webkit-touch-callout: text; /* iOS Safari */
+  -webkit-user-select: text; /* Safari */
+   -khtml-user-select: text; /* Konqueror HTML */
+     -moz-user-select: text; /* Firefox */
+      -ms-user-select: text; /* Internet Explorer/Edge */
+          user-select: text; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+.h-24 span {
+  font-size: 30px !important;
+  font-family: 'Nunito', sans-serif;
+  background: rgb(0,255,235);
+  background: linear-gradient(90deg, rgb(0, 238, 255) 0%, rgba(0,130,193,1) 100%, rgba(0,90,157,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+tbody, tr {
+  background-color: #232530 !important;
+}
+tr {
+  cursor: pointer;
+}
+.text-left, .w-\[10\%\] {
+  color: rgb(225, 225, 225);
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.text-teal-400 {
+  color: #22acb6 !important;
+}
+.text-cyan-500 {
+  color: rgb(200, 200, 200);
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+}
+.text-cyan-600 {
+  text-align: center;
+}
+.text-neutral-400 {
+  font-size: 28px;
+  font-family: 'Inter', sans-serif;
+  color: rgb(238, 238, 238);
+  font-weight: 600;
+  text-align: center;
+}
+.rhap_time {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 14px !important;
+  color: rgb(238, 238, 238) !important;
+}
+.rhap_progress-filled {
+  background: linear-gradient(90deg, rgb(0, 174, 255) 0%, rgb(0, 96, 145) 100%, rgb(0, 66, 117) 100%) !important;
+}
+.rhap_download-progress {
+  background-color: #3e4344 !important;
+}
+.rhap_progress-indicator {
+  background: linear-gradient(90deg, rgb(0, 174, 255) 0%, rgb(0, 96, 145) 100%, rgb(0, 66, 117) 100%) !important;
+  width: 10px !important;
+  height: 10px !important;
+  top: -3px !important;
+  box-shadow: none !important;
+}
+.rhap_volume-bar {
+  background-color: #7099a1 !important;
+}
+.rhap_volume-filled {
+  position: unset !important;
+  background: linear-gradient(90deg, rgb(0, 174, 255) 0%, rgb(0, 96, 145) 100%, rgb(0, 66, 117) 100%) !important;
+}
+.rhap_download-progress {
+  background-color: #39484d !important;
+}
+.rhap_volume-indicator {
+  background: linear-gradient(90deg, rgb(0, 174, 255) 0%, rgb(0, 96, 145) 100%, rgb(0, 66, 117) 100%) !important;
+  width: 10px !important;
+  height: 10px !important;
+  top: -3px !important;
+  box-shadow: none !important;
+}
+.m-auto img {
+  box-sizing: border-box;
+  width: 256px;
+  height: 256px;
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  box-shadow: 4px 4px 9px 1px #00000050;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.player-music {
+    background-color: #0F172A !important;
+    height: 6rem;
+}
+.rhap_time, .rhap_current-time {
+    color: white !important;
+}
+.col-span-2::-webkit-scrollbar {
+  background-color: transparent;
+}
+.h-24.bg-slate-900.text-white.text-center {
+  background-color: #1a1b25 !important;
+}
+.rhap_main-controls-button, .rhap_volume-button, .rhap_repeat-button {
+  color: #aeb4c0 !important;
+}
+th {
+  font-weight: 500;
+}
+.rhap_container {
+  display: block !important;
+  background-color: #232530 !important;
+}
+::selection {
+    background-color: transparent;
+    color: turquoise;
+}
+.text-white.h-12 {
+  border-bottom: 1px solid #1f9ea7;
+  border-radius: 50%;
+}
+  /* width */
+  ::-webkit-scrollbar {
+    width: 3px;
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+    width: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(55, 92, 122);
+  }
