@@ -12,6 +12,7 @@ export default function DetailSong() {
             <div style={{marginTop: '15px'}} className='m-auto mt-10'>
                 <img className='w-full' src={song.links.images[0].url} alt='Song image' />
             </div>
+            <p className='comment'>-- Lo-fi with Chimmyw --</p>
         </div>
     )
 }

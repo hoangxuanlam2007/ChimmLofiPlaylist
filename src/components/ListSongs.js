@@ -10,16 +10,17 @@ export default function ListSongs() {
   };
   useEffect(() => {
     setidSong(song.id)
+    document.getElementsByClassName("text-teal-400")[0].scrollIntoView({block: 'center', behavior: 'smooth'})
   }, [song])
   return (
     <div className="col-span-2  overflow-y-scroll">
-      <table className="table-auto w-full">
+      <table className="table-auto w-full" style={{whiteSpace: 'nowrap'}}>
         <thead className="text-white h-12">
           <tr>
             <th className="w-[10%]">#</th>
             <th className="text-left">Tên bài hát</th>
             <th className="w-[10%]">Tác giả</th>
-            <th className="w-[10%]">Tải về</th>
+            <th className="w-[10%]"><i class="fa fa-download"></i></th>
           </tr>
         </thead>
         <tbody>
