@@ -195,3 +195,28 @@ th {
   ::-webkit-scrollbar-thumb {
     background: rgb(55, 92, 122);
   }
+
+  /* Responsive */
+  @media screen and (max-width: 630px) {
+    body {
+      overflow-y: hidden !important;
+      pointer-events: none;
+    }
+    #root {
+      display: none !important;
+    }
+    .mobile {
+      display: block !important;
+      background-color: #ffffff;
+      z-index: 99999;
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      font-size: 40px;
+      line-height: 45px;
+      color: red;
+      margin-top: 50%;
+      font-family: 'Inter', sans-serif;
+    }
+  }
