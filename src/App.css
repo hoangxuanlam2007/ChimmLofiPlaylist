@@ -23,6 +23,40 @@ body, .text-cyan-500, br {
           user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome and Opera */
 }
+.swal2-popup {
+  background: #fafafa !important;
+}
+.swal2-confirm:focus, .swal2-deny:focus, .swal2-cancel:focus, .swal2-styled.swal2-confirm {
+  box-shadow: none !important;
+}
+.swal2-title {
+  font-size: 28px !important;
+  line-height: 32px !important;
+}
+.swal2-html-container {
+  text-align: left !important;
+  padding: 0 25px 0 25px !important;
+  overflow: unset !important;
+  color: #8b949e;
+}
+.shortcut {
+  line-height: 30px;
+}
+.btnshort {
+  margin: 0 1px 0 0 !important;
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(201, 201, 201, 0.397);
+  border-radius: 5px;
+}
+.normalshortcut {
+  background-color: rgba(201, 201, 201, 0.397);
+  margin: auto 5px;
+  font-size: 85%;
+  border-right: 3px solid #4739ddc9 !important;
+  padding: 0.2em 0.4em;
+}
 .bg-slate-700 {
   background-color: #232530 !important;
 }
@@ -88,7 +122,7 @@ tr {
   height: 3px !important;
   opacity: 1 !important;
   background: #dbdbdb;
-  transition: all .2s ease-in-out !important;
+  transition: all .15s ease-in-out !important;
 }
 .rhap_progress-filled:hover {
   background: #22acb6 !important;
@@ -100,7 +134,7 @@ tr {
   border: 3px solid #232530;
   top: -7px !important;
   box-shadow: none !important;
-  transition: all .2s ease-in-out !important;
+  transition: all .15s ease-in-out !important;
   content: url('./img/outlined-progress-indicator.png');
 }
 .rhap_volume-bar {
@@ -108,9 +142,9 @@ tr {
 }
 .rhap_volume-filled {
   position: unset !important;
-  background: #dbdbdb !important;
+  background: #dbdbdb;
   height: 3px !important;
-  transition: all .2s cubic-bezier(0.46, 0.03, 0.52, 0.96) !important;
+  transition: all .15s ease-in-out !important;
 }
 .rhap_volume-indicator {
   width: 17px !important;
@@ -118,7 +152,7 @@ tr {
   border: 3px solid #232530;
   top: -7px !important;
   box-shadow: none !important;
-  transition: all .2s cubic-bezier(0.46, 0.03, 0.52, 0.96) !important;
+  transition: all .15s ease-in-out !important;
   content: url('./img/outlined-progress-indicator.png');
 }
 .rhap_progress-container {
@@ -182,11 +216,14 @@ tr {
   background-color: #232530 !important;
 }
 .rhap_main-controls-button, .rhap_volume-button, .rhap_repeat-button {
-  color: #e4e4e4 !important;
+  color: #dbdbdb !important;
   transition: all .3s ease;
 }
 .rhap_main-controls-button:hover, .rhap_volume-button:hover, .rhap_repeat-button:hover {
   color: #19c8d4 !important;
+}
+#hint {
+  text-shadow: none !important;
 }
 th {
   font-weight: 500;
@@ -237,7 +274,21 @@ th {
       -ms-user-select: none; /* Internet Explorer/Edge */
           user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome and Opera */
-  text-shadow: 0 0 3px #fbffff44, 0 0 8px #fbffff28, 0 0 20px #fbffff1c;
+  text-shadow: 0 0 3px #ffffff65, 0 0 8px #ffffff42, 0 0 20px #ffffff2f;
+}
+.comment-ribbon {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f8f8f8;
+  text-align: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
 }
 .comment span .spwoman {
   opacity: 0;
@@ -266,11 +317,11 @@ th {
 }
 /* Flickering animation */
 @keyframes flicker {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow: 0 0 3px #ffffff, 0 0 8px #ffffff7e, 0 0 20px #ffffff57;
+  0%, 18%, 22%, 30%, 53%, 57%, 100% {
+    text-shadow: 0 0 3px #ffffff, 0 0 8px #ffffff8f, 0 0 20px #ffffff63;
   }
   20%, 24%, 55% {        
-      text-shadow: none;
+      text-shadow: 0 0 3px #00000070;
   }    
 }
   /* width */

@@ -12,7 +12,7 @@ export default function DetailSong() {
             <div style={{marginTop: '15px'}} className='m-auto mt-10'>
                 <img className='w-full' src={song.links.images[0].url} alt='Song image' />
             </div>
-            <p className='comment'>&#127872; A special gift for a<span className='sp'>&nbsp;special woman&nbsp;<a className='spwoman' href='https://facebook.com/wuynnycnhatt' target={'_blank'}><span id='hint'>hint</span></a></span>&#10024; &#127872;</p>
+            <p className='comment-ribbon'>&#127872; <span className='comment'>A special gift for a<span className='sp'>&nbsp;special woman&nbsp;<a className='spwoman' href='https://facebook.com/wuynnycnhatt' target={'_blank'}><span id='hint'>hint</span></a></span>&#10024;</span> &#127872;</p>
         </div>
     )
 }

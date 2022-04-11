@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// Made by Chimmyw
 import "./App.css";
 import Navbar from "./components/Navbar";
 import DetailSong from "./components/DetailSong";
