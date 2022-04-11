@@ -5,6 +5,10 @@
   outline: none !important;
   scroll-behavior: smooth !important;
 }
+body {
+  background-color: #232530;
+  overflow-y: hidden !important;
+}
 ::selection {
   color: white !important;
   background-color: #00b7ff !important;
@@ -49,7 +53,7 @@ tr {
   color: rgb(225, 225, 225);
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
 }
 .text-teal-400 {
   color: #22acb6 !important;
@@ -77,38 +81,74 @@ tr {
 }
 .rhap_time {
   font-family: 'Open Sans', sans-serif !important;
-  font-size: 14px !important;
+  font-size: 13px !important;
   color: rgb(238, 238, 238) !important;
 }
 .rhap_progress-filled {
-  background: linear-gradient(90deg, rgb(0, 174, 255) 0%, rgb(0, 96, 145) 100%, rgb(0, 66, 117) 100%) !important;
+  height: 3px !important;
+  opacity: 1 !important;
+  background: #dbdbdb;
+  transition: all .2s ease-in-out !important;
 }
-.rhap_download-progress {
-  background-color: #3e4344 !important;
+.rhap_progress-filled:hover {
+  background: #22acb6 !important;
 }
 .rhap_progress-indicator {
-  background: linear-gradient(90deg, rgb(0, 174, 255) 0%, rgb(0, 96, 145) 100%, rgb(0, 66, 117) 100%) !important;
-  width: 10px !important;
-  height: 10px !important;
-  top: -3px !important;
+  opacity: 0;
+  width: 18px !important;
+  height: 18px !important;
+  border: 3px solid #232530;
+  top: -7px !important;
   box-shadow: none !important;
+  transition: all .2s ease-in-out !important;
+  content: url('./img/outlined-progress-indicator.png');
 }
 .rhap_volume-bar {
-  background-color: #8f8f8f !important;
+  background-color: #b3b3b318 !important;
 }
 .rhap_volume-filled {
   position: unset !important;
-  background: linear-gradient(90deg, rgb(0, 174, 255) 0%, rgb(0, 96, 145) 100%, rgb(0, 66, 117) 100%) !important;
-}
-.rhap_download-progress {
-  background-color: #8f8f8f !important;
+  background: #dbdbdb !important;
+  height: 3px !important;
+  transition: all .2s cubic-bezier(0.46, 0.03, 0.52, 0.96) !important;
 }
 .rhap_volume-indicator {
-  background: linear-gradient(90deg, rgb(0, 174, 255) 0%, rgb(0, 96, 145) 100%, rgb(0, 66, 117) 100%) !important;
-  width: 10px !important;
-  height: 10px !important;
-  top: -3px !important;
+  width: 17px !important;
+  height: 17px !important;
+  border: 3px solid #232530;
+  top: -7px !important;
   box-shadow: none !important;
+  transition: all .2s cubic-bezier(0.46, 0.03, 0.52, 0.96) !important;
+  content: url('./img/outlined-progress-indicator.png');
+}
+.rhap_progress-container {
+  margin: 0 10px !important;
+}
+.rhap_time.rhap_current-time {
+  padding: 0 0 0 420px !important;
+}
+.rhap_time.rhap_total-time {
+  padding: 0 420px 0 0 !important;
+}
+@media screen and (max-width: 1335px) {
+  .rhap_time.rhap_current-time {
+    padding: 0 0 0 280px !important;
+  }
+  .rhap_time.rhap_total-time {
+    padding: 0 280px 0 0 !important;
+  }
+}
+@media screen and (max-width: 895px) {
+  .rhap_time.rhap_current-time {
+    padding: 0 0 0 200px !important;
+  }
+  .rhap_time.rhap_total-time {
+    padding: 0 200px 0 0 !important;
+  }
+}
+.rhap_progress-bar {
+  height: 3px !important;
+  background-color: rgb(255 255 255 / 8%) !important;
 }
 .m-auto img {
   box-sizing: border-box;
@@ -146,10 +186,18 @@ tr {
   transition: all .3s ease;
 }
 .rhap_main-controls-button:hover, .rhap_volume-button:hover, .rhap_repeat-button:hover {
-  color: #1f9ea7 !important;
+  color: #19c8d4 !important;
 }
 th {
   font-weight: 500;
+}
+.rhap_main-controls-button {
+  font-size: 30px !important;
+}
+.rhap_play-pause-button {
+  font-size: 32px !important;
+  width: 34px !important;
+  height: 34px !important;
 }
 .rhap_container {
   display: block !important;
@@ -164,13 +212,24 @@ th {
   border-radius: 50%;
   cursor: default !important;
 }
+.bg-slate-800.h-12.text-gray-500.\hover\:bg-slate-600.bg-slate-600.text-teal-400 .text-center:last-child svg {
+  animation: spin 2s linear infinite;
+  transform-origin: 50% 50%;
+  margin: auto !important;
+}
+.text-center:last-child svg {
+  margin: auto !important;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% {  transform: rotate(359deg); }
+}
 .comment {
   margin-top: 10px;
   font-size: 14px;
   font-weight: 600;
-  color: #eeeeeeee;
+  color: #f8f8f8;
   text-align: center;
-  text-shadow: 2px 2px 3px #000000aa;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
    -khtml-user-select: none; /* Konqueror HTML */
@@ -178,6 +237,41 @@ th {
       -ms-user-select: none; /* Internet Explorer/Edge */
           user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome and Opera */
+  text-shadow: 0 0 3px #fbffff44, 0 0 8px #fbffff28, 0 0 20px #fbffff1c;
+}
+.comment span .spwoman {
+  opacity: 0;
+  position: absolute; 
+  background: #181920d5; 
+  color: #f8f8f8; 
+  padding: 8px 12px;
+  border-radius: 5px;
+  bottom: 18px;
+  left: 26px;
+  transition: all .15s ease-in-out;
+}
+.comment .sp {
+  animation: flicker 1.5s infinite alternate;
+  position: relative;
+  cursor: pointer;
+}
+.comment .sp:hover .spwoman {
+  opacity: 1;
+  text-align: center;
+  text-shadow: none !important;
+  animation: none !important;
+}
+.comment .sp .spwoman:hover {
+ color: #19c8d4;
+}
+/* Flickering animation */
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 3px #ffffff, 0 0 8px #ffffff7e, 0 0 20px #ffffff57;
+  }
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
 }
   /* width */
   ::-webkit-scrollbar {
@@ -197,26 +291,77 @@ th {
   }
 
   /* Responsive */
-  @media screen and (max-width: 630px) {
-    body {
-      overflow-y: hidden !important;
-      pointer-events: none;
+  @media screen and (max-width: 860px) {
+    tbody {
+      overflow-x: scroll !important;
     }
-    #root {
+  }
+  @media screen and (max-width: 630px) {
+    .overflow-hidden {
+      overflow-y: scroll !important;
+      overflow-x: scroll !important;
+    }
+    .grid.grid-cols-3.bg-slate-700.h-screen-navbar-player.overflow-hidden {
+      margin-top: 1px
+    }
+    .rhap_volume-container {
       display: none !important;
     }
-    .mobile {
+    .col-span-1.p-3 {
+      display: none !important;
+    }
+    .col-span-2 {
+      margin-left: 20px;
+    }
+    .w-\[10\%\] {
+      display: none !important;
+    }
+    .h-24.bg-slate-900.text-white.text-center span {
+      font-size: 24px !important;
+    }
+    .h-24.bg-slate-900.text-white.text-center span a img {
+      height: 30px !important;
+      width: 30px !important;
+    }
+    .text-white.h-12 {
+      display: none !important;
+    }
+    .text-white.h-12 tr {
+      display: none !important;
+    }
+    .table-auto.w-full {
+      overflow-x: scroll !important;
+    }
+    .col-span-2 {
+      z-index: 0 !important;
+    }
+    .song-name {
+      padding-left: 10px !important;
+    }
+    .rhap_time {
+      display: none !important;
+    }
+    .grid {
       display: block !important;
-      background-color: #ffffff;
-      z-index: 99999;
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-      text-align: center;
-      font-size: 40px;
-      line-height: 45px;
-      color: red;
-      margin-top: 50%;
-      font-family: 'Inter', sans-serif;
+    }
+    .table-auto.w-full {
+      white-space: normal !important;
+    }
+    .bg-slate-800.h-12.text-gray-500.\hover\:bg-slate-600.bg-slate-600.text-teal-400 .text-center:last-child, 
+    .bg-slate-800.h-12.text-gray-500.\hover\:bg-slate-600.false .text-center:last-child {
+      display: none !important;
+    }
+    .bg-slate-800.h-12.text-gray-500.\hover\:bg-slate-600.bg-slate-600.text-teal-400 .text-center,
+    .bg-slate-800.h-12.text-gray-500.\hover\:bg-slate-600.false .text-center {
+      text-align: right !important;
+      padding-right: 10px !important;
+    }
+    .bg-slate-800.h-12.text-gray-500.\hover\:bg-slate-600.bg-slate-600.text-teal-400 .text-center:first-child,
+    .bg-slate-800.h-12.text-gray-500.\hover\:bg-slate-600.false .text-center:first-child {
+      text-align: left !important;
+    }
+    tr {
+      border-bottom: 1px solid #dbdbdb15;
+      margin: 5px 0 5px 0 !important;
     }
   }
