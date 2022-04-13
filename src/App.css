@@ -5,7 +5,19 @@
   outline: none !important;
   scroll-behavior: smooth !important;
 }
+.css-yymkrn {
+  text-align: center;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  width: 100% !important;
+  height: 100vh !important;
+  transition: all .2s ease-in-out;
+}
 body {
+  height: 100vh !important;
   background-color: #232530;
   overflow-y: hidden !important;
 }
@@ -35,9 +47,28 @@ body, .text-cyan-500, br {
 }
 .swal2-html-container {
   text-align: left !important;
-  padding: 0 25px 0 25px !important;
+  padding: 0 0 0 50px !important;
   overflow: unset !important;
   color: #8b949e;
+  white-space: nowrap;
+}
+@media screen and (max-width: 615px) {
+  .swal2-html-container {
+    text-align: left !important;
+    padding: 0 0 0 10px !important;
+    overflow: unset !important;
+    color: #8b949e;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .swal2-html-container {
+    text-align: left !important;
+    margin: 10px auto !important;
+    overflow: unset !important;
+    color: #8b949e;
+    white-space: nowrap;
+  }
 }
 .shortcut {
   line-height: 30px;
@@ -74,7 +105,7 @@ body, .text-cyan-500, br {
   font-family: 'Nunito', sans-serif;
   background: rgb(0,255,235);
   background: linear-gradient(90deg, rgb(0, 238, 255) 0%, rgba(0,130,193,1) 100%, rgba(0,90,157,1) 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 tbody, tr {
@@ -121,7 +152,7 @@ tr {
 .rhap_progress-filled {
   height: 3px !important;
   opacity: 1 !important;
-  background: #dbdbdb;
+  background: #dadada;
   transition: all .15s ease-in-out !important;
 }
 .rhap_progress-filled:hover {
@@ -142,7 +173,7 @@ tr {
 }
 .rhap_volume-filled {
   position: unset !important;
-  background: #dbdbdb;
+  background: #dadada;
   height: 3px !important;
   transition: all .15s ease-in-out !important;
 }
@@ -206,17 +237,20 @@ tr {
     background-color: #0F172A !important;
     height: 6rem;
 }
-.rhap_time, .rhap_current-time {
-    color: white !important;
-}
 .col-span-2::-webkit-scrollbar {
   background-color: transparent;
 }
 .h-24.bg-slate-900.text-white.text-center {
   background-color: #232530 !important;
 }
+.h-24.bg-slate-900.text-white.text-center span {
+  transition: all .3s ease-in-out;
+}
+.h-24.bg-slate-900.text-white.text-center span:hover {
+  filter: brightness(1.15);
+}
 .rhap_main-controls-button, .rhap_volume-button, .rhap_repeat-button {
-  color: #dbdbdb !important;
+  color: #e1e1e1 !important;
   transition: all .3s ease;
 }
 .rhap_main-controls-button:hover, .rhap_volume-button:hover, .rhap_repeat-button:hover {
@@ -412,7 +446,7 @@ th {
       text-align: left !important;
     }
     tr {
-      border-bottom: 1px solid #dbdbdb15;
+      border-bottom: 1px solid #dadada15;
       margin: 5px 0 5px 0 !important;
     }
   }

@@ -16,8 +16,9 @@ import { IoMdVolumeOff } from "react-icons/io";
 
 export default function Playing() {
     const {song, handleSetSong} = useContext(Songs)
-    const handleZeroId = () => {
-        handleSetSong(song.id + 1)
+    const handleWebStartSong = () => {
+        handleSetSong(song.id + 1) // song.id + 1
+        handleSetSong(song.id - 1) // return song id to 0, make the browser think that user just change the song twice so that we can now able to use shortcuts to control the player
     }
     const handleNextSong = () => {
         handleSetSong(song.id + 1)
@@ -82,25 +83,12 @@ document.body.onkeydown = function(e){
 // 2| Hover progress container to change the style of filled-progress-bar
 // 3| Hover volumebar area to show the volume-indicator
 // 4| Hover volumebar area to change the style of filled-volume-bar
-window.onload = function() { //load this function onload
-
-  // --------------------------- //
-  //        Welcome dialog       //
-  // --------------------------- //
-
-  Swal.fire({
-    title: "Chào mừng bạn đã đến với Chimmyw Lofi Playlist!", 
-    html: "<span class='shortcut-header'>Phím tắt:</span></br><span class='shortcut'><span class='btnshort'><--</span>:<span class='normalshortcut'>Bài trước</span></br><span class='btnshort'>--></span>:<span class='normalshortcut'>Bài sau</span></br><span class='btnshort'>[dấu cách]</span>:<span class='normalshortcut'>Dừng/Phát nhạc</span></span>",  
-    showConfirmButton: 'true',
-    confirmButtonText: `Cảm ơn`,
-  })
-    .then((result) => {
-      if (result.isConfirmed) {
-        handleZeroId();
-        handleClickPre();
-        document.querySelector('audio').play(); 
-      }
-  });
+window.onload = function onloadFunction() { //load this function onload
+  mainFunction(); //run the mainFunction first
+  
+  setTimeout(() => {
+    handleWebStartSong();
+  }, 3000);
 
   // --------------------------- //
 
@@ -109,6 +97,7 @@ window.onload = function() { //load this function onload
   //        Main Function        //
   // --------------------------- //
 
+ function mainFunction() {
   let Container = document.getElementsByClassName('rhap_progress-container');
   let Indicator = document.getElementsByClassName('rhap_progress-indicator');
   let Filled = document.getElementsByClassName('rhap_progress-filled');
@@ -123,7 +112,7 @@ window.onload = function() { //load this function onload
 
   Container[0].onmouseout = function(){
     Indicator[0].style.opacity = "0"; //1
-    Filled[0].style.background = "#dbdbdb"; //2
+    Filled[0].style.background = "#dadada"; //2
   }
 
   setStyleVolumeBar();
@@ -132,11 +121,12 @@ window.onload = function() { //load this function onload
     volumeIndicator[0].style.opacity = "1"; //3
     volumeFilled[0].style.background = "#22acb6"; //4
   }
-
   volumeContainer[0].onmouseout = function(){
+
     volumeIndicator[0].style.opacity = "0"; //3
-    volumeFilled[0].style.background = "#dbdbdb"; //4
+    volumeFilled[0].style.background = "#dadada"; //4
   }
+ }
 }
 
 // Shortcut
@@ -164,8 +154,8 @@ let volumeIndicator = document.getElementsByClassName('rhap_volume-indicator');
 let volumeFilled = document.getElementsByClassName('rhap_volume-filled');
   let Filled = document.getElementsByClassName('rhap_progress-filled'); //Extra
 function setStyleVolumeBar() {
-  volumeFilled[0].style.background = "#dbdbdb";
-  Filled[0].style.background = "#dbdbdb"; //Extra
+  volumeFilled[0].style.background = "#dadada";
+  Filled[0].style.background = "#dadada"; //Extra
   volumeIndicator[0].style.opacity = "0";
 }
 
@@ -198,4 +188,22 @@ function setStyleVolumeBar() {
       />
     </div>
   );
+}
+
+  // --------------------------- //
+  //        Welcome dialog       //
+  // --------------------------- //
+
+export const welcome = () => {
+  Swal.fire({
+    title: "Chào mừng bạn đã đến với Chimmyw Lofi Playlist!", 
+    html: "<span class='shortcut-header'>Phím tắt:</span></br><span class='shortcut'><span class='btnshort'><--</span>:<span class='normalshortcut'>Bài trước</span></br><span class='btnshort'>--></span>:<span class='normalshortcut'>Bài sau</span></br><span class='btnshort'>[dấu cách]</span>:<span class='normalshortcut'>Dừng/Phát nhạc</span></span>",  
+    showConfirmButton: 'true',
+    confirmButtonText: `Cảm ơn`,
+  })
+    .then((result) => {
+      if (result.isConfirmed) {
+        document.querySelector('audio').play();
+      }
+  });
 }

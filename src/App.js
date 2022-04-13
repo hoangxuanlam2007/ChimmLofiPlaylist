@@ -6,8 +6,21 @@ import ListSongs from "./components/ListSongs";
 import { Songs } from "./Context";
 import DataSongs from "./data/songs.json";
 import Playing from "./components/Playing";
-import { useState } from "react";
+import {welcome} from "./components/Playing";
+import { useState, useEffect } from "react";
+import HashLoader from "react-spinners/HashLoader";
 function App() {
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true)
+      setTimeout(() => {
+        setLoading(false)
+        welcome();
+      }, 3000);
+  }, [])
+
   const [song, setSong] = useState(DataSongs[0])
 
   const handleSetSong = (idSong) => {
@@ -17,8 +30,10 @@ function App() {
     else
            setSong(song)
   }
+
   return (
     <div className="App">
+      <HashLoader color={'#363FD7'} loading={loading} size={100} />
       <Songs.Provider value={{ DataSongs, song, handleSetSong}}>
         <Navbar />
         <div className="grid grid-cols-3 bg-slate-700 h-screen-navbar-player overflow-hidden">
