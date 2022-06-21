@@ -9,14 +9,15 @@ import Playing from "./components/Playing";
 import {welcome} from "./components/Playing";
 import { useState, useEffect } from "react";
 import HashLoader from "react-spinners/HashLoader";
-function App() {
 
+function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true)
       setTimeout(() => {
-        setLoading(false)
+        setLoading(false);
+        window.scrollTo(0, 0);
         welcome();
       }, 3000);
   }, [])
@@ -33,7 +34,9 @@ function App() {
 
   return (
     <div className="App">
-      <HashLoader color={'#363FD7'} loading={loading} size={100} />
+      <div className="loading-container" style={{overflow:'none', transition:'none'}}>
+      <HashLoader color={'#363FD7'} loading={loading} size={100}/>
+      </div>
       <Songs.Provider value={{ DataSongs, song, handleSetSong}}>
         <Navbar />
         <div className="grid grid-cols-3 bg-slate-700 h-screen-navbar-player overflow-hidden">

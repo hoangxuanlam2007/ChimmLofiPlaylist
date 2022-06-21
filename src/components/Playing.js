@@ -17,6 +17,7 @@ import { IoMdVolumeOff } from "react-icons/io";
 export default function Playing() {
     const {song, handleSetSong} = useContext(Songs)
     const handleWebStartSong = () => {
+        handleSetSong(song.id = 0) // song.id = 0
         handleSetSong(song.id + 1) // song.id + 1
         handleSetSong(song.id - 1) // return song id to 0, make the browser think that user just change the song twice so that we can now able to use shortcuts to control the player
     }
@@ -164,7 +165,7 @@ function setStyleVolumeBar() {
       <AudioPlayer
         className="player-music"
         src={song.url}
-        volume={0.15}
+        volume={0.1}
         hasDefaultKeyBindings={false}
         layout="stacked-reverse"
         showSkipControls={true}

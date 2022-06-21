@@ -153,7 +153,7 @@ tr {
   height: 3px !important;
   opacity: 1 !important;
   background: #dadada;
-  transition: all .15s ease-in-out !important;
+  transition: background .15s ease-in-out;
 }
 .rhap_progress-filled:hover {
   background: #22acb6 !important;
@@ -165,7 +165,7 @@ tr {
   border: 3px solid #232530;
   top: -7px !important;
   box-shadow: none !important;
-  transition: all .15s ease-in-out !important;
+  transition: opacity .15s ease-in-out;
   content: url('./img/outlined-progress-indicator.png');
 }
 .rhap_volume-bar {
@@ -175,15 +175,16 @@ tr {
   position: unset !important;
   background: #dadada;
   height: 3px !important;
-  transition: all .15s ease-in-out !important;
+  transition: background .15s ease-in-out;
 }
 .rhap_volume-indicator {
+  opacity: 0;
   width: 17px !important;
   height: 17px !important;
   border: 3px solid #232530;
   top: -7px !important;
   box-shadow: none !important;
-  transition: all .15s ease-in-out !important;
+  transition: opacity .15s ease-in-out !important;
   content: url('./img/outlined-progress-indicator.png');
 }
 .rhap_progress-container {
@@ -296,7 +297,7 @@ th {
   100% {  transform: rotate(359deg); }
 }
 .comment {
-  margin-top: 10px;
+  font-family: Open Sans, sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #f8f8f8;
@@ -324,30 +325,9 @@ th {
           user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome and Opera */
 }
-.comment span .spwoman {
-  opacity: 0;
-  position: absolute; 
-  background: #181920d5; 
-  color: #f8f8f8; 
-  padding: 8px 12px;
-  border-radius: 5px;
-  bottom: 18px;
-  left: 26px;
-  transition: all .15s ease-in-out;
-}
 .comment .sp {
   animation: flicker 1.5s infinite alternate;
   position: relative;
-  cursor: pointer;
-}
-.comment .sp:hover .spwoman {
-  opacity: 1;
-  text-align: center;
-  text-shadow: none !important;
-  animation: none !important;
-}
-.comment .sp .spwoman:hover {
- color: #19c8d4;
 }
 /* Flickering animation */
 @keyframes flicker {
