@@ -33,6 +33,7 @@ export default function Playing() {
         handleSetSong(song.id - 1)
         document.getElementsByClassName("text-teal-400")[0].scrollIntoView({block: 'center', behavior: 'smooth'})
     }
+
 // Prevent the page scrolling when pressed Spacebar
 window.addEventListener('keydown', function(e) {
   if(e.keyCode === 32 && e.target === document.body) {

@@ -1,26 +1,26 @@
 [
     {
-        "name": "Lần Hẹn Hò Đầu Tiên",
-        "author": "Huyền Tâm Môn x Chang",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/988301949055144006/0.mp3",
+        "name": "Lying To Myself",
+        "author": "Dab x Sy x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990123857555910686/42.mp3",
         "id": 0,
         "links": {
             "images": [
                 {
-                    "url": "https://i1.sndcdn.com/artworks-4iM3HQbLwycm1qRI-NIzhBw-t500x500.jpg"
+                    "url": "https://i.ytimg.com/vi/WBCP9QG1Wio/maxresdefault.jpg"
                 }
             ]
         }
     },
     {
-        "name": "Phố Đã Lên Đèn",
-        "author": "Huyền Tâm Môn - Prod. Tuyen Vu",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/988302434717794374/1.mp3",
+        "name": "Nơi Đây Anh Chờ Em",
+        "author": "Bozitt x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990815398268129320/1.mp3",
         "id": 1,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/G8o_sN8ZvL0/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/RzWOslp1rm0/maxresdefault.jpg"
                 }
             ]
         }
@@ -72,7 +72,7 @@
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/mtXLdJU-ZXI/0.jpg"
+                    "url": "https://i.ytimg.com/vi/mtXLdJU-ZXI/maxresdefault.jpg"
                 }
             ]
         }
@@ -111,7 +111,7 @@
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/M-rS4MCSE_I/0.jpg"
+                    "url": "https://pic-bstarstatic.akamaized.net/ugc/664ca2b763f6809a3203d475a129c515a7c04aff.jpg@960w_540h_1e_1c_1f.webp"
                 }
             ]
         }
@@ -124,7 +124,7 @@
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/wxH468TqmJ4/0.jpg"
+                    "url": "https://pic-bstarstatic.akamaized.net/ugc/8dfebc03191a17d324f41bfdd8a30182d9d12ea6.jpg@1200w_630h_1e_1c_1f"
                 }
             ]
         }
@@ -210,7 +210,7 @@
     {
         "name": "Hông Về Tình Iu",
         "author": "Khoi Vu x Orinn",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990150858744397904/16.mp3",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990532372451708958/16.mp3",
         "id": 16,
         "links": {
             "images": [
@@ -345,7 +345,7 @@
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/Q5u8Qi7GqC0/0.jpg"
+                    "url": "https://i.ytimg.com/vi/Q5u8Qi7GqC0/maxresdefault.jpg"
                 }
             ]
         }
@@ -436,7 +436,7 @@
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/5z8A5WmIKOk/hqdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/5z8A5WmIKOk/maxresdefault.jpg"
                 }
             ]
         }
@@ -546,10 +546,23 @@
         }
     },
     {
+        "name": "Kẻ Cô Đơn Trong Thành Phố",
+        "author": "Khải x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990811516427182100/0.mp3",
+        "id": 42,
+        "links": {
+            "images": [
+                {
+                    "url": "https://pic-bstarstatic.akamaized.net/ugc/d9a7da03f2f08c5bd300ddd7a86e0d8d1b5dda97.jpg"
+                }
+            ]
+        }
+    },
+    {
         "name": "Lying To Myself",
         "author": "Dab x Sy x Freak D",
         "url": "https://cdn.discordapp.com/attachments/908893799294566400/990123857555910686/42.mp3",
-        "id": 42,
+        "id": 1,
         "links": {
             "images": [
                 {
