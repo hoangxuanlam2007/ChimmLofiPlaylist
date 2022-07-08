@@ -89,7 +89,7 @@ body, .text-cyan-500, br {
   padding: 0.2em 0.4em;
 }
 .bg-slate-700 {
-  background-color: #232530 !important;
+  background-color: #27282e !important;
 }
 .col-span-1 {
   -webkit-touch-callout: text; /* iOS Safari */
@@ -109,7 +109,7 @@ body, .text-cyan-500, br {
   -webkit-text-fill-color: transparent;
 }
 tbody, tr {
-  background-color: #232530 !important;
+  background-color: #27282e !important;
 }
 tr {
   cursor: pointer;
@@ -121,7 +121,7 @@ tr {
   font-size: 14px;
 }
 .text-teal-400 {
-  color: #22acb6 !important;
+  color: #26c6d1 !important;
 }
 .text-cyan-500 {
   color: rgb(200, 200, 200);
@@ -242,7 +242,7 @@ tr {
   background-color: transparent;
 }
 .h-24.bg-slate-900.text-white.text-center {
-  background-color: #232530 !important;
+  background-color: #27282e !important;
 }
 .h-24.bg-slate-900.text-white.text-center span {
   transition: all .3s ease-in-out;
@@ -273,7 +273,7 @@ th {
 }
 .rhap_container {
   display: block !important;
-  background-color: #232530 !important;
+  background-color: #27282e !important;
 }
 ::selection {
     background-color: transparent;
