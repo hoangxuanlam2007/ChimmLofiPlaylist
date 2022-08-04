@@ -438,7 +438,7 @@ th {
       font-size: 14px !important;
     }
     .App div:nth-child(2) {
-      margin-bottom: -35px;
+      margin-bottom: -55px;
     }
     #nav-element {
       top: -30px;
@@ -458,12 +458,16 @@ th {
       backdrop-filter: blur(3px);
       border-radius: 50px;
       padding: 5px 0;
+      font-size: 14px !important;
     }
-    .rhap_repeat-button, .rhap_volume-controls {
+    .rhap_progress-section {
+      padding: 20px 0 0 0 !important;
+    }
+    .rhap_repeat-button, .rhap_volume-controls, .rhap_main-controls-button {
       opacity: 0 !important;
       pointer-events: none !important;
     }
     .grid.grid-cols-3.bg-slate-700.h-screen-navbar-player.overflow-hidden {
-      padding-bottom: 125px !important;
+      padding-bottom: 165px !important;
     }
   }
