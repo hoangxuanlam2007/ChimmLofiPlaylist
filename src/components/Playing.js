@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { Songs } from "../Context";
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 // Icons
 import { BsPlayFill } from "react-icons/bs";
