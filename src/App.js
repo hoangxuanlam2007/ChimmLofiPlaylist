@@ -14,9 +14,11 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true)
+    setLoading(true);
+    document.getElementsByClassName('App')[0].style.display = 'none';
       setTimeout(() => {
         setLoading(false);
+        document.getElementsByClassName('App')[0].style.display = 'block';
         window.scrollTo(0, 0);
         welcome();
       }, 3000);
@@ -33,10 +35,11 @@ function App() {
   }
 
   return (
+    <div>
+    <div className="loading-container" style={{overflow:'hidden', transition:'none'}}>
+    <HashLoader color={'#363FD7'} loading={loading} size={100}/>
+    </div>
     <div className="App">
-      <div className="loading-container" style={{overflow:'none', transition:'none'}}>
-      <HashLoader color={'#363FD7'} loading={loading} size={100}/>
-      </div>
       <Songs.Provider value={{ DataSongs, song, handleSetSong}}>
         <Navbar />
         <div className="grid grid-cols-3 bg-slate-700 h-screen-navbar-player overflow-hidden">
@@ -47,6 +50,7 @@ function App() {
         </div>
         <Playing/>
       </Songs.Provider>
+    </div>
     </div>
   );
 }
