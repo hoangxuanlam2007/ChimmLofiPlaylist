@@ -142,7 +142,7 @@ tr {
 }
 .rhap_container {
   position: absolute !important;
-  padding-bottom: calc(1em + env(safe-area-inset-bottom));
+  padding-bottom: calc(1em + env(safe-area-inset-bottom)) !important;
   box-shadow: 0px 0px 10px 0px #00000050 !important;
 }
 .rhap_time {
