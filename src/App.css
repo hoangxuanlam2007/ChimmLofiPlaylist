@@ -365,6 +365,7 @@ th {
       overflow-x: scroll !important;
     }
   }
+  
   @media screen and (max-width: 630px) {
     .overflow-hidden {
       overflow-y: scroll !important;
