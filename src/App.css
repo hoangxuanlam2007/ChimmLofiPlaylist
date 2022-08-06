@@ -474,7 +474,7 @@ th {
       top: -30px;
     }
     .rhap_container {
-      margin-top: calc(100vh - 220px);
+      margin-top: calc(100vh - 210px);
       top: 0;
       position:fixed;
       overflow-y:scroll;
@@ -486,7 +486,7 @@ th {
       position: fixed !important;
       margin-left: auto;
       margin-right: auto;
-      top: calc(100vh - 265px);
+      top: calc(100vh - 255px);
       width: 100%;
       text-align: center;
       background-color: #10101135;
@@ -494,6 +494,37 @@ th {
       border-radius: 10px;
       padding: 5px 0;
       font-size: 14px !important;
+    }
+    .comment-ribbon-footer {
+      display: block !important;
+      position: fixed !important;
+      margin-left: auto;
+      margin-right: auto;
+      top: calc(100vh - 255px);
+      width: 100%;
+      text-align: center;
+      background-color: #10101135;
+      backdrop-filter: blur(3px);
+      border-radius: 10px;
+      padding: 5px 0;
+      font-size: 14px !important;
+    }
+    .logo-ft {
+      opacity: 0.65;
+      display: block !important;
+      position: fixed !important;
+      align-content: center;
+      top: calc(100vh - 110px);
+      text-align: center;
+      z-index: 10000;
+      left: 0;
+      right: 0;
+    }
+    .logo-ft img {
+      display: block;
+      margin: 0 auto;
+      width: 64px;
+      height: 64px;
     }
     .rhap_volume-controls {
       display: none !important;
@@ -503,6 +534,6 @@ th {
       padding: 0 20px;
     }
     .grid.grid-cols-3.bg-slate-700.h-screen-navbar-player.overflow-hidden {
-      padding-bottom: 175px !important;
+      padding-bottom: 165px !important;
     }
   }
