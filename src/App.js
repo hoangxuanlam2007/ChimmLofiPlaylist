@@ -9,6 +9,7 @@ import Playing from "./components/Playing";
 import {welcome} from "./components/Playing";
 import { useState, useEffect } from "react";
 import HashLoader from "react-spinners/HashLoader";
+import $ from "jquery";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -27,10 +28,22 @@ function App() {
         }
         loveDateFooter();
         setLoading(false);
+        window.scrollTo(0, 0);
         document.getElementsByClassName('App')[0].style.display = 'block';
         welcome();
       }, 3000);
   }, [])
+
+  $("body.swal2-height-auto").css({ 'height' : ''});
+
+  // Find the window height - Fix iOS Safari 100vh bug
+  const windowHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--window-height', `${window.innerHeight}px`)
+  }
+  window.addEventListener('resize', windowHeight);
+  windowHeight();
+
 
   const [song, setSong] = useState(DataSongs[0])
 
@@ -44,7 +57,7 @@ function App() {
 
   return (
     <div>
-      <div className="loading-container" style={{overflow:'hidden', transition:'none'}}>
+      <div className="loading-container" style={{overflow:'hidden', transition:'none', verticalAlign: 'center'}}>
         <HashLoader color={'#363FD7'} loading={loading} size={100}/>
       </div>
 

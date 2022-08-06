@@ -21,10 +21,16 @@ body {
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
 }
+body.swal2-shown.swal2-height-auto.swal2-iosfix {
+  height: 100vh !important;
+  height: var(--window-height) !important;
+}
 html {
   height: -webkit-fill-available;
 }
 body {
+  height: 100vh;
+  height: var(--window-height);
   background-color: #27282e !important;
   overflow-x: hidden !important;
 }
@@ -248,8 +254,8 @@ tr {
   user-select: none;
 }
 .player-music {
+    height: 6rem;
     position: fixed !important;
-    height: 100%;
 }
 .col-span-2::-webkit-scrollbar {
   background-color: transparent;
