@@ -4,6 +4,7 @@
 * {
   outline: none !important;
   scroll-behavior: smooth !important;
+  overflow: hidden !important;
 }
 .css-yymkrn {
   text-align: center;
