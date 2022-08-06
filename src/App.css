@@ -146,18 +146,12 @@ tr {
   text-align: center;
   padding: 0 40px 0 40px;
 }
-.App, #root {
-  height: -webkit-fill-available !important;
-  height: fill-available !important;
-}
 .rhap_container {
-  position: fixed !important;
   box-shadow: 0 0 10px 0 #00000050 !important;
   display: block !important;
   background-color: #27282e !important;
   z-index: 100;
   width: 100%;
-  height: -webkit-fill-available !important;
 }
 .text-center, .song-name {
   z-index: 10 !important;
@@ -253,7 +247,7 @@ tr {
   user-select: none;
 }
 .player-music {
-    height: 6rem;
+    position: fixed !important;
 }
 .col-span-2::-webkit-scrollbar {
   background-color: transparent;
