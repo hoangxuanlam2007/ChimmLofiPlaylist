@@ -16,14 +16,15 @@
   height: 100vh !important;
   transition: all .2s ease-in-out;
 }
+body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
 html {
   height: -webkit-fill-available;
 }
 body {
-  height: 100vh;
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
   background-color: #27282e !important;
   overflow-x: hidden !important;
 }
@@ -248,6 +249,7 @@ tr {
 }
 .player-music {
     position: fixed !important;
+    height: 100%;
 }
 .col-span-2::-webkit-scrollbar {
   background-color: transparent;
