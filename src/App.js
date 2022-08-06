@@ -28,7 +28,6 @@ function App() {
         loveDateFooter();
         setLoading(false);
         document.getElementsByClassName('App')[0].style.display = 'block';
-        window.scrollTo(0, 0);
         welcome();
       }, 3000);
   }, [])
