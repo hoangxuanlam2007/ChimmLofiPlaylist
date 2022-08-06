@@ -26,13 +26,14 @@ body.swal2-shown.swal2-height-auto.swal2-iosfix {
   height: var(--window-height) !important;
 }
 html {
-  height: 110vh;
+  inset: 0;
   height: -webkit-fill-available;
 }
 body {
-  height: 110vh;
+  height: 100vh;
+  height: var(--window-height);
   background-color: #27282e !important;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
 }
 ::selection {
   color: white !important;
@@ -159,6 +160,7 @@ tr {
   background-color: #27282e !important;
   z-index: 100;
   width: 100%;
+  border-radius: 50px;
 }
 .text-center, .song-name {
   z-index: 10 !important;
@@ -452,13 +454,22 @@ th {
     .song-name, tbody tr .text-center {
       font-size: 14px !important;
     }
-    .App div:nth-child(2) {
-      margin-bottom: -55px;
+    .App div:nth-child(3) {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      align-content: center;
+      display: block;
+    }
+    .rhap_container.rhap_loop--off.rhap_play-status--paused.player-music {
+      position: fixed !important;
+      top: 100 !important;
     }
     #nav-element {
       top: -30px;
     }
     .rhap_container {
+      display: block !important;
       box-shadow: 0 -20px 20px 0 #00000040!important;
     }
     .comment-ribbon-footer {
@@ -475,12 +486,12 @@ th {
       padding: 5px 0;
       font-size: 14px !important;
     }
-    .rhap_progress-section {
-      padding: 20px 0 0 0 !important;
-    }
-    .rhap_repeat-button, .rhap_volume-controls, .rhap_main-controls-button {
-      opacity: 0 !important;
+    .rhap_volume-controls {
+      display: none !important;
       pointer-events: none !important;
+    }
+    .rhap_controls-section {
+      padding: 0 20px;
     }
     .grid.grid-cols-3.bg-slate-700.h-screen-navbar-player.overflow-hidden {
       padding-bottom: 165px !important;
