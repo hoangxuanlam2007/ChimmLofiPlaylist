@@ -26,11 +26,11 @@ body.swal2-shown.swal2-height-auto.swal2-iosfix {
   height: var(--window-height) !important;
 }
 html {
+  height: 110vh;
   height: -webkit-fill-available;
 }
 body {
-  height: 100vh;
-  height: var(--window-height);
+  height: 110vh;
   background-color: #27282e !important;
   overflow-x: hidden !important;
 }

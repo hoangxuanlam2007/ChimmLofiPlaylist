@@ -34,8 +34,6 @@ function App() {
       }, 3000);
   }, [])
 
-  $("body.swal2-height-auto").css({ 'height' : ''});
-
   // Find the window height - Fix iOS Safari 100vh bug
   const windowHeight = () => {
     const doc = document.documentElement
