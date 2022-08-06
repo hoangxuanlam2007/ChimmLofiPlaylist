@@ -17,11 +17,13 @@
   transition: all .2s ease-in-out;
 }
 html {
-  height: -webkit-fill-available !important;
+  height: -webkit-fill-available;
 }
 body {
   height: 100vh;
-  height: -webkit-fill-available !important;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
   background-color: #27282e !important;
   overflow-x: hidden !important;
 }
@@ -156,7 +158,6 @@ tr {
   z-index: 100;
   width: 100%;
   height: -webkit-fill-available !important;
-  height: fill-available !important;
 }
 .text-center, .song-name {
   z-index: 10 !important;
