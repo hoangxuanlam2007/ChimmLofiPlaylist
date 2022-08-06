@@ -28,6 +28,7 @@ body.swal2-shown.swal2-height-auto.swal2-iosfix {
 html {
   inset: 0;
   height: -webkit-fill-available;
+  overflow: hidden;
 }
 body {
   height: 100vh;
@@ -473,7 +474,7 @@ th {
       top: -30px;
     }
     .rhap_container {
-      margin-top: calc(100vh - 280px);
+      margin-top: calc(100vh - 260px);
       top: 0;
       position:fixed;
       overflow-y:scroll;
@@ -485,7 +486,7 @@ th {
       position: fixed !important;
       margin-left: auto;
       margin-right: auto;
-      top: calc(100vh - 325px);
+      top: calc(100vh - 300px);
       width: 100%;
       text-align: center;
       background-color: #10101135;
@@ -495,10 +496,10 @@ th {
       font-size: 14px !important;
     }
     .mobile-footer-p {
-      opacity: 0.8;
-      top: calc(100vh - 175px);
+      opacity: 0.9;
+      top: calc(100vh - 160px);
       display: block !important;
-      position: absolute !important;
+      position: fixed !important;
       z-index: 10000;
       margin-left: auto;
       margin-right: auto;
