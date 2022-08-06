@@ -16,10 +16,16 @@
   height: 100vh !important;
   transition: all .2s ease-in-out;
 }
+html {
+  height: -webkit-fill-available;
+  height: fill-available;
+}
 body {
-  height: 100vh !important;
+  height: 100vh;
+  height: -webkit-fill-available;
+  height: fill-available;
   background-color: #27282e !important;
-  overflow: hidden !important;
+  overflow-x: hidden !important;
 }
 ::selection {
   color: white !important;
@@ -140,9 +146,22 @@ tr {
   text-align: center;
   padding: 0 40px 0 40px;
 }
+.App, #root {
+  height: -webkit-fill-available !important;
+  height: fill-available !important;
+}
 .rhap_container {
-  position: absolute !important;
+  position: fixed !important;
   box-shadow: 0 0 10px 0 #00000050 !important;
+  display: block !important;
+  background-color: #27282e !important;
+  z-index: 100;
+  width: 100%;
+  height: -webkit-fill-available !important;
+  height: fill-available !important;
+}
+.text-center, .song-name {
+  z-index: 10 !important;
 }
 .rhap_time {
   font-family: 'Open Sans', sans-serif !important;
@@ -235,7 +254,6 @@ tr {
   user-select: none;
 }
 .player-music {
-    background-color: #0F172A !important;
     height: 6rem;
 }
 .col-span-2::-webkit-scrollbar {
@@ -270,10 +288,6 @@ th {
   font-size: 32px !important;
   width: 34px !important;
   height: 34px !important;
-}
-.rhap_container {
-  display: block !important;
-  background-color: #27282e !important;
 }
 ::selection {
     background-color: transparent;
