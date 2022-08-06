@@ -70,7 +70,15 @@ function App() {
             <ListSongs />
           </div>
           <Playing/>
-          <p className='comment-ribbon-footer' style={{display: 'none'}}>&#127872; <span className='comment'>We've been falling in love for<span className='sp-footer' id='sp-footer'></span>&nbsp;days&nbsp;&#10024;</span> &#127872;</p>
+          <div>
+            <p className='comment-ribbon-footer' style={{display: 'none'}}>&#127872; <span className='comment'>We've been falling in love for<span className='sp-footer' id='sp-footer'></span>&nbsp;days&nbsp;&#10024;</span> &#127872;</p>
+          </div>
+          <div>
+            <p className="mobile-footer-p">
+              <img src="/favicon.ico"></img>
+              <span>- Made by <u>Xuân Lâm</u> with&nbsp;<span>❤️</span></span>
+            </p>
+          </div>
         </Songs.Provider>
 
       </div>
