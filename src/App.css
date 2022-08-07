@@ -465,7 +465,6 @@ th {
       width: 100%;
       align-content: center;
       display: inline-block !important;
-      overflow: hidden !important;
     }
     .rhap_time.rhap_time.rhap_total-time {
       display: none !important;
@@ -498,6 +497,23 @@ th {
       border-radius: 50px;
       padding: 5px 0;
       font-size: 14px !important;
+    }
+    .logo-ft {
+      opacity: 0.65;
+      display: block !important;
+      position: fixed !important;
+      align-content: center;
+      top: calc(100vh - 105px);
+      text-align: center;
+      z-index: 10000;
+      left: 0;
+      right: 0;
+    }
+    .logo-ft img {
+      display: block;
+      margin: 0 auto;
+      width: 64px;
+      height: 64px;
     }
     .rhap_volume-controls {
       display: none !important;
