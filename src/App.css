@@ -508,7 +508,7 @@ th {
       text-align: center;
       background-color: #10101135;
       backdrop-filter: blur(3px);
-      border-radius: 50%;
+      border-radius: 50px;
       padding: 5px 0;
       font-size: 14px !important;
     }
