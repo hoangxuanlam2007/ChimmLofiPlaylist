@@ -4,20 +4,17 @@
 * {
   outline: none !important;
   scroll-behavior: smooth !important;
-  overflow: hidden !important;
 }
 .css-yymkrn {
   text-align: center;
   background-color: transparent;
-  display: block;
-  position: absolute;
-  z-index: 9999999;
+  display: flex;
   justify-content: center;
   align-content: center;
-  margin: 0 auto;
+  margin: auto;
   width: 100% !important;
   height: 100vh !important;
-  height: var(--window-height) !important;
+  transition: all .2s ease-in-out;
 }
 body {
   min-height: 100vh;
@@ -494,40 +491,9 @@ th {
       text-align: center;
       background-color: #10101135;
       backdrop-filter: blur(3px);
-      border-radius: 10px;
-      padding: 5px 0;
-      font-size: 14px !important;
-    }
-    .comment-ribbon-footer {
-      display: block !important;
-      position: fixed !important;
-      margin-left: auto;
-      margin-right: auto;
-      top: calc(100vh - 255px);
-      width: 100%;
-      text-align: center;
-      background-color: #10101135;
-      backdrop-filter: blur(3px);
       border-radius: 50px;
       padding: 5px 0;
       font-size: 14px !important;
-    }
-    .logo-ft {
-      opacity: 0.65;
-      display: block !important;
-      position: fixed !important;
-      align-content: center;
-      top: calc(100vh - 105px);
-      text-align: center;
-      z-index: 10000;
-      left: 0;
-      right: 0;
-    }
-    .logo-ft img {
-      display: block;
-      margin: 0 auto;
-      width: 64px;
-      height: 64px;
     }
     .rhap_volume-controls {
       display: none !important;
