@@ -483,6 +483,7 @@ th {
       overflow-y:scroll;
       overflow-x:hidden;
       box-shadow: 0 -10px 20px 0 #00000040!important;
+      overflow: hidden !important;
     }
     .comment-ribbon-footer {
       display: block !important;
@@ -508,6 +509,7 @@ th {
       z-index: 10000;
       left: 0;
       right: 0;
+      overflow: hidden !important;
     }
     .logo-ft img {
       display: block;
