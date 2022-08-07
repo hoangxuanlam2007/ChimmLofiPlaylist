@@ -8,13 +8,16 @@
 .css-yymkrn {
   text-align: center;
   background-color: transparent;
-  display: flex;
+  display: block;
+  position: absolute;
+  z-index: 9999999;
+  margin: 0 auto;
   justify-content: center;
   align-content: center;
   margin: auto;
   width: 100% !important;
   height: 100vh !important;
-  transition: all .2s ease-in-out;
+  height: var(--window-height) !important;
 }
 body {
   min-height: 100vh;
@@ -462,6 +465,7 @@ th {
       width: 100%;
       align-content: center;
       display: inline-block !important;
+      overflow: hidden !important;
     }
     .rhap_time.rhap_time.rhap_total-time {
       display: none !important;
