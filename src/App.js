@@ -9,7 +9,6 @@ import Playing from "./components/Playing";
 import {welcome} from "./components/Playing";
 import { useState, useEffect } from "react";
 import HashLoader from "react-spinners/HashLoader";
-import $ from "jquery";
 
 function App() {
   const [loading, setLoading] = useState(false);

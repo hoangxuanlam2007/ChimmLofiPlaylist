@@ -166,7 +166,7 @@ function setStyleVolumeBar() {
       <AudioPlayer
         className="player-music"
         src={song.url}
-        volume={0.1}
+        volume={0.15}
         hasDefaultKeyBindings={false}
         layout="stacked-reverse"
         showSkipControls={true}

@@ -167,6 +167,9 @@ tr {
   width: 100%;
   border-radius: 50px;
 }
+.rhap_controls-section {
+  padding: 0 25px !important;
+}
 .text-center, .song-name {
   z-index: 10 !important;
 }
@@ -550,7 +553,7 @@ th {
       pointer-events: none !important;
     }
     .rhap_controls-section {
-      padding: 0 20px;
+      padding: 0 20px !important;
     }
     .grid.grid-cols-3.bg-slate-700.h-screen-navbar-player.overflow-hidden {
       padding-bottom: 165px !important;
