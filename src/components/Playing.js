@@ -3,6 +3,8 @@ import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { Songs } from "../Context";
 import Swal from 'sweetalert2';
+import { RHAP_UI } from 'react-h5-audio-player';
+import $ from 'jquery'; //jQuery!!!
 
 // Icons
 import { BsPlayFill } from "react-icons/bs";
@@ -13,13 +15,14 @@ import { MdRepeatOne } from "react-icons/md";
 import { MdRepeat } from "react-icons/md";
 import { IoMdVolumeHigh } from "react-icons/io";
 import { IoMdVolumeOff } from "react-icons/io";
+import {MdOutlineShuffle} from "react-icons/md";
+import {MdOutlineShuffleOn} from "react-icons/md";
 
 export default function Playing() {
     const {song, handleSetSong} = useContext(Songs)
     const handleWebStartSong = () => {
         handleSetSong(song.id = 0) // song.id = 0
-        handleSetSong(song.id + 1) // song.id + 1
-        handleSetSong(song.id - 1) // return song id to 0, make the browser think that user just change the song twice so that we can now able to use shortcuts to control the player
+        handleSetSong(song.id + 0) // make the browser think that user just change the song so that we can now able to use shortcuts to control the player
     }
     const handleNextSong = () => {
         handleSetSong(song.id + 1)
@@ -33,6 +36,21 @@ export default function Playing() {
         handleSetSong(song.id - 1)
         document.getElementsByClassName("text-teal-400")[0].scrollIntoView({block: 'center', behavior: 'smooth'})
     }
+
+// Extra: Shuffle button
+$('.rhap_shuffle-button').click(function () {
+  if($(this).css('display') == 'block') {
+    $(this).css('display', 'none');
+    $('.rhap_shuffle-button-shuffle-on').css('display', 'block');
+  }
+});
+
+$('.rhap_shuffle-button-shuffle-on').click(function () {
+  if($(this).css('display') == 'block') {
+    $(this).css('display', 'none');
+    $('.rhap_shuffle-button').css('display', 'block');
+  }
+});
 
 // Prevent the page scrolling when pressed Spacebar
 window.addEventListener('keydown', function(e) {
@@ -166,7 +184,7 @@ function setStyleVolumeBar() {
       <AudioPlayer
         className="player-music"
         src={song.url}
-        volume={0.15}
+        volume={0.3}
         hasDefaultKeyBindings={false}
         layout="stacked-reverse"
         showSkipControls={true}
@@ -177,6 +195,17 @@ function setStyleVolumeBar() {
         onEnded={handleNextSong}
         onClickNext={handleClickNext}
         onClickPrevious={handleClickPre}
+        customAdditionalControls={
+          [
+            RHAP_UI.LOOP,
+            <button aria-label="Enable shuffle" className="rhap_button-clear rhap_shuffle-button" type="button">
+              <MdOutlineShuffle />
+            </button>,
+            <button aria-label="Enable shuffle" className="rhap_button-clear rhap_shuffle-button-shuffle-on" id="shuffle" type="button">
+              <MdOutlineShuffleOn />
+            </button>
+          ]
+        }
         customIcons={{
           play: <BsPlayFill />,
           pause: <BsPauseFill />,

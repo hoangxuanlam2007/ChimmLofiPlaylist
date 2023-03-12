@@ -19,6 +19,9 @@
   height: 100vh !important;
   height: var(--window-height) !important;
 }
+.logo-ft {
+  display: none !important;
+}
 body {
   min-height: 100vh;
   /* mobile viewport bug fix */
@@ -156,7 +159,10 @@ tr {
   color: rgb(238, 238, 238);
   font-weight: 600;
   text-align: center;
-  padding: 0 40px 0 40px;
+}
+.text-neutral-400.text-2xl {
+  max-width: 400px !important;
+  margin: auto;
 }
 .rhap_container {
   box-shadow: 0 0 10px 0 #00000050 !important;
@@ -165,7 +171,24 @@ tr {
   z-index: 100;
   position: absolute !important;
   width: 100%;
-  border-radius: 50px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.rhap_shuffle-button {
+  display: block;
+  font-size: 26px;
+  width: 26px;
+  height: 26px;
+  color: #e1e1e1;
+  margin-left: 10px;
+}
+.rhap_shuffle-button-shuffle-on {
+  display: none;
+  font-size: 26px;
+  width: 26px;
+  height: 26px;
+  color: #e1e1e1;
+  margin-left: 10px;
 }
 .rhap_controls-section {
   padding: 0 25px !important;
@@ -191,7 +214,7 @@ tr {
   opacity: 0;
   width: 18px !important;
   height: 18px !important;
-  border: 3px solid #232530;
+  border: 3px solid #27282E;
   top: -7px !important;
   box-shadow: none !important;
   transition: opacity .15s ease-in-out;
@@ -210,7 +233,7 @@ tr {
   opacity: 0;
   width: 17px !important;
   height: 17px !important;
-  border: 3px solid #232530;
+  border: 3px solid #27282E;
   top: -7px !important;
   box-shadow: none !important;
   transition: opacity .15s ease-in-out !important;
@@ -279,11 +302,11 @@ tr {
 .h-24.bg-slate-900.text-white.text-center span:hover {
   filter: brightness(1.15);
 }
-.rhap_main-controls-button, .rhap_volume-button, .rhap_repeat-button {
+.rhap_main-controls-button, .rhap_volume-button, .rhap_repeat-button, .rhap_shuffle-button {
   color: #e1e1e1 !important;
   transition: all .3s ease;
 }
-.rhap_main-controls-button:hover, .rhap_volume-button:hover, .rhap_repeat-button:hover {
+.rhap_main-controls-button:hover, .rhap_volume-button:hover, .rhap_shuffle-button:hover, .rhap_repeat-button:hover {
   color: #19c8d4 !important;
 }
 #hint {
@@ -434,7 +457,7 @@ th {
       display: none !important;
     }
     .col-span-2 {
-      margin-left: 20px;
+      margin: 0 20px;
     }
     .w-\[10\%\] {
       display: none !important;
@@ -459,7 +482,17 @@ th {
       z-index: 0 !important;
     }
     .song-name {
-      padding-left: 10px !important;
+      max-width: 150px;
+      font-weight: 600 !important;
+      letter-spacing: -1px;
+    }
+    #song-author {
+      max-width: 150px;
+      font-size: 12px !important;
+      letter-spacing: -1px;
+    }
+    .h-12 {
+      height: 4rem !important;
     }
     .rhap_time {
       display: none !important;
@@ -484,8 +517,8 @@ th {
       text-align: left !important;
     }
     tr {
-      border-bottom: 1px solid #dadada15;
-      margin: 5px 0 5px 0 !important;
+      border-bottom: 1px solid #dadada0a;
+      margin: auto;
     }
     .song-name, tbody tr .text-center {
       font-size: 14px !important;
@@ -508,20 +541,19 @@ th {
       top: -30px;
     }
     .rhap_container {
-      margin-top: calc(100vh - 210px);
-      top: 0;
-      position:fixed;
-      overflow-y:scroll;
-      overflow-x:hidden;
+      height: 100px;
+      bottom: 0;
+      position: fixed;
+      overflow-y: scroll !important;
+      overflow-x: hidden !important;
       box-shadow: 0 -10px 20px 0 #00000040!important;
-      overflow: hidden !important;
     }
     .comment-ribbon-footer {
       display: block !important;
       position: fixed !important;
       margin-left: auto;
       margin-right: auto;
-      top: calc(100vh - 255px);
+      bottom: 110px;
       width: 100%;
       text-align: center;
       background-color: #10101135;
@@ -530,32 +562,20 @@ th {
       padding: 5px 0;
       font-size: 14px !important;
     }
-    .logo-ft {
-      opacity: 0.65;
-      display: block !important;
-      position: fixed !important;
-      align-content: center;
-      top: calc(100vh - 105px);
-      text-align: center;
-      z-index: 10000;
-      left: 0;
-      right: 0;
-      overflow: hidden !important;
-    }
-    .logo-ft img {
-      display: block;
-      margin: 0 auto;
-      width: 64px;
-      height: 64px;
-    }
     .rhap_volume-controls {
       display: none !important;
       pointer-events: none !important;
     }
     .rhap_controls-section {
-      padding: 0 20px !important;
+      padding: 5px 25px 0 25px !important;
     }
     .grid.grid-cols-3.bg-slate-700.h-screen-navbar-player.overflow-hidden {
       padding-bottom: 165px !important;
+    }
+    .App .h-24.bg-slate-900.text-white.text-center.leading-\[6rem\].text-3xl {
+      box-shadow: 0px 1px 20px 3px #00000050;
+      z-index: 1000 !important;
+      position: relative;
+      border: none !important;
     }
   }

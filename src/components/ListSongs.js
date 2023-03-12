@@ -62,8 +62,8 @@ export default function ListSongs() {
               onClick={() => handlePlaySong(song.id)}
             >
               <td className="text-center" style={{borderBottom: 'none', textAlign: 'left'}}>{index + 1}</td>
-              <td className="song-name">{song.name}</td>
-              <td className="text-center">{song.author}</td>
+              <td className="song-name" id="song-name">{song.name}</td>
+              <td className="text-center" id="song-author">{song.author}</td>
               <td className="text-center"><FaCompactDisc style={{margin: '-3px auto auto auto', fontSize: '20px'}} /></td>
             </tr>
           ))}
