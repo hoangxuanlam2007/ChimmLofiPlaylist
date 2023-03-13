@@ -163,6 +163,7 @@ tr {
 .text-neutral-400.text-2xl {
   max-width: 400px !important;
   margin: auto;
+  padding: 0 15px;
 }
 .rhap_container {
   box-shadow: 0 0 10px 0 #00000050 !important;
@@ -173,6 +174,7 @@ tr {
   width: 100%;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
+  overflow: hidden !important;
 }
 .rhap_shuffle-button {
   display: block;
@@ -295,6 +297,7 @@ tr {
 }
 .h-24.bg-slate-900.text-white.text-center {
   background-color: #27282e !important;
+  max-height: 96px !important;
 }
 .h-24.bg-slate-900.text-white.text-center span {
   transition: all .3s ease-in-out;
@@ -544,8 +547,6 @@ th {
       height: 100px;
       bottom: 0;
       position: fixed;
-      overflow-y: scroll !important;
-      overflow-x: hidden !important;
       box-shadow: 0 -10px 20px 0 #00000040!important;
     }
     .comment-ribbon-footer {

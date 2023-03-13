@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { Songs } from "../Context";
@@ -25,17 +25,31 @@ export default function Playing() {
         handleSetSong(song.id + 0) // make the browser think that user just change the song so that we can now able to use shortcuts to control the player
     }
     const handleNextSong = () => {
-        handleSetSong(song.id + 1)
-        document.getElementsByClassName("text-teal-400")[0].scrollIntoView({block: 'center', behavior: 'smooth'})
+      // Shuffle now works!
+        if($('.rhap_shuffle-button-shuffle-on').css('display') == 'block') { //check if shuffle is on
+          handleSetSong(song.id + 0 - song.id + (Math.floor(Math.random() * 52 + 1)));
+          $("tr.text-teal-400").scrollIntoView({
+            block: 'start',
+            behavior: 'smooth',
+          });
+        } else if($('.rhap_shuffle-button').css('display') == 'block') { // if shuffle is off
+          handleSetSong(song.id + 1); //return normal function
+        }
     }
     const handleClickNext = () => {
         handleSetSong(song.id + 1)
-        document.getElementsByClassName("text-teal-400")[0].scrollIntoView({block: 'center', behavior: 'smooth'})
     }
     const handleClickPre = () => {
         handleSetSong(song.id - 1)
-        document.getElementsByClassName("text-teal-400")[0].scrollIntoView({block: 'center', behavior: 'smooth'})
     }
+
+    useEffect(() => {     
+      // $("tr.text-teal-400").get(0).scrollIntoView({
+      //   block: 'start',
+      //   behavior: 'smooth',
+      // });
+      $("tr.text-teal-400").scrollTop();
+    }, [song.id]);
 
 // Extra: Shuffle button
 $('.rhap_shuffle-button').click(function () {
@@ -51,6 +65,8 @@ $('.rhap_shuffle-button-shuffle-on').click(function () {
     $('.rhap_shuffle-button').css('display', 'block');
   }
 });
+
+
 
 // Prevent the page scrolling when pressed Spacebar
 window.addEventListener('keydown', function(e) {
