@@ -28,10 +28,6 @@ export default function Playing() {
       // Shuffle now works!
         if($('.rhap_shuffle-button-shuffle-on').css('display') == 'block') { //check if shuffle is on
           handleSetSong(song.id + 0 - song.id + (Math.floor(Math.random() * 52 + 1)));
-          $("tr.text-teal-400").scrollIntoView({
-            block: 'start',
-            behavior: 'smooth',
-          });
         } else if($('.rhap_shuffle-button').css('display') == 'block') { // if shuffle is off
           handleSetSong(song.id + 1); //return normal function
         }
@@ -42,14 +38,16 @@ export default function Playing() {
     const handleClickPre = () => {
         handleSetSong(song.id - 1)
     }
-
-    useEffect(() => {     
-      // $("tr.text-teal-400").get(0).scrollIntoView({
-      //   block: 'start',
-      //   behavior: 'smooth',
-      // });
-      $("tr.text-teal-400").scrollTop();
-    }, [song.id]);
+    
+// Auto-croll to playing song in the list
+useEffect(() => {     
+  setTimeout(()=>{ //Fix wrong web decisions (scroll to far)
+    $("tr.text-teal-400").get(0).scrollIntoView({
+      block: 'center',
+      behavior: 'smooth',
+    });
+   }, 1) //delay 1ms
+}, [song.id]);
 
 // Extra: Shuffle button
 $('.rhap_shuffle-button').click(function () {
@@ -246,7 +244,7 @@ export const welcome = () => {
     title: "Chào mừng bạn đã đến với Chimmyw Lofi Playlist!", 
     html: "<span class='shortcut-header'>Phím tắt:</span></br><span class='shortcut'><span class='btnshort'><--</span>:<span class='normalshortcut'>Bài trước</span></br><span class='btnshort'>--></span>:<span class='normalshortcut'>Bài sau</span></br><span class='btnshort'>[dấu cách]</span>:<span class='normalshortcut'>Dừng/Phát nhạc</span></span>",  
     showConfirmButton: 'true',
-    confirmButtonText: `Cảm ơn`,
+    confirmButtonText: `Được thôi!`,
   })
     .then((result) => {
       if (result.isConfirmed) {

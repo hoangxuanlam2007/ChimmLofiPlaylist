@@ -41,7 +41,6 @@ export default function ListSongs() {
 
   useEffect(() => {
     setidSong(song.id)
-    document.getElementsByClassName("text-teal-400")[0].scrollIntoView({block: 'center', behavior: 'smooth'})
   }, [song])
   return (
     <div className="col-span-2  overflow-y-scroll  overflow-x-hidden">
@@ -55,6 +54,10 @@ export default function ListSongs() {
           </tr>
         </thead>
         <tbody>
+        {/* This fix top list for mobile view */}
+        <tr className="fix-list-top" style={{display: 'none', height: '96px'}}></tr>
+
+          {/* List start */}
           {DataSongs.map((song, index) => (
             <tr
               key={index}
@@ -67,6 +70,10 @@ export default function ListSongs() {
               <td className="text-center"><FaCompactDisc style={{margin: '-3px auto auto auto', fontSize: '20px'}} /></td>
             </tr>
           ))}
+          {/* List end */}
+
+          {/* This fix bottom list for mobile view */}
+          <tr className="fix-list" style={{display: 'none', height: '60px'}}></tr>
         </tbody>
       </table>
     </div>

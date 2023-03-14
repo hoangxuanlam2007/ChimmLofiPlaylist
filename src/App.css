@@ -170,7 +170,7 @@ tr {
   display: block !important;
   background-color: #27282e !important;
   z-index: 100;
-  position: absolute !important;
+  position: fixed !important;
   width: 100%;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
@@ -197,6 +197,9 @@ tr {
 }
 .text-center, .song-name {
   z-index: 10 !important;
+}
+.song-name {
+  padding-left: 10px;
 }
 .rhap_time {
   font-family: 'Open Sans', sans-serif !important;
@@ -297,7 +300,6 @@ tr {
 }
 .h-24.bg-slate-900.text-white.text-center {
   background-color: #27282e !important;
-  max-height: 96px !important;
 }
 .h-24.bg-slate-900.text-white.text-center span {
   transition: all .3s ease-in-out;
@@ -450,9 +452,6 @@ th {
       overflow-y: scroll !important;
       overflow-x: scroll !important;
     }
-    .grid.grid-cols-3.bg-slate-700.h-screen-navbar-player.overflow-hidden {
-      margin-top: 1px
-    }
     .rhap_volume-container {
       display: none !important;
     }
@@ -527,21 +526,16 @@ th {
       font-size: 14px !important;
     }
     .App div:nth-child(3) {
-      position: absolute !important;
+      position: fixed !important;
       height: 100%;
       width: 100%;
       align-content: center;
-      display: inline-block !important;
+      display: block !important;
+      overflow: hidden !important;
     }
     .rhap_time.rhap_time.rhap_total-time {
       display: none !important;
       opacity: 0;
-    }
-    .rhap_main.rhap_stacked-reverse { 
-      margin-bottom: 100px;
-    }
-    #nav-element {
-      top: -30px;
     }
     .rhap_container {
       height: 100px;
@@ -570,13 +564,17 @@ th {
     .rhap_controls-section {
       padding: 5px 25px 0 25px !important;
     }
-    .grid.grid-cols-3.bg-slate-700.h-screen-navbar-player.overflow-hidden {
-      padding-bottom: 165px !important;
+    .fix-list, .fix-list-top {
+      display: block !important;
     }
     .App .h-24.bg-slate-900.text-white.text-center.leading-\[6rem\].text-3xl {
       box-shadow: 0px 1px 20px 3px #00000050;
       z-index: 1000 !important;
-      position: relative;
+      position: fixed;
+      width: 100vw;
+      height: 96px !important;
       border: none !important;
+      overflow: hidden !important;
+      display: block !important;
     }
   }
