@@ -170,7 +170,6 @@ tr {
   display: block !important;
   background-color: #27282e !important;
   z-index: 100;
-  position: fixed !important;
   width: 100%;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
@@ -578,5 +577,9 @@ th {
       border: none !important;
       overflow: hidden !important;
       display: block !important;
+    }
+    .h-screen-navbar-player {
+      height: calc(100vh - 6rem);
+      padding-bottom: 96px;
     }
   }
