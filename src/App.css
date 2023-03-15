@@ -478,7 +478,8 @@ th {
       display: none !important;
     }
     .table-auto.w-full {
-      overflow-x: scroll !important;
+      overflow-x: hidden !important;
+      margin-bottom: 62px;
     }
     .col-span-2 {
       z-index: 0 !important;
@@ -546,15 +547,14 @@ th {
     .comment-ribbon-footer {
       display: block !important;
       position: fixed !important;
-      margin-left: auto;
-      margin-right: auto;
+      margin: auto;
       bottom: 110px;
       width: 100%;
       text-align: center;
       background-color: #10101135;
       backdrop-filter: blur(3px);
       border-radius: 50px;
-      padding: 5px 0;
+      padding: 5px;
       font-size: 14px !important;
     }
     .rhap_volume-controls {

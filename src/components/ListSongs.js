@@ -73,7 +73,7 @@ export default function ListSongs() {
           {/* List end */}
 
           {/* This fix bottom list for mobile view */}
-          <tr className="fix-list" style={{display: 'none', height: '60px'}}></tr>
+          {/* <tr className="bg-slate-800 h-12 text-gray-500 hover:bg-slate-600 false fix-list" style={{display: 'none', height: '60px'}}></tr> */}
         </tbody>
       </table>
     </div>

@@ -1,10 +1,15 @@
+// ----------------------------------------------------------------------- //
+//                          Give me a starr !!                             //
+//                           Wrote by Chimmyw                              // 
+// ----------------------------------------------------------------------- //
+
 import React, { useContext, useEffect } from "react";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { Songs } from "../Context";
 import Swal from 'sweetalert2';
 import { RHAP_UI } from 'react-h5-audio-player';
-import $ from 'jquery'; //jQuery!!!
+import $ from 'jquery'; // jQuery imported
 
 // Icons
 import { BsPlayFill } from "react-icons/bs";
@@ -19,6 +24,7 @@ import {MdOutlineShuffle} from "react-icons/md";
 import {MdOutlineShuffleOn} from "react-icons/md";
 
 export default function Playing() {
+  // Default player control function
     const {song, handleSetSong} = useContext(Songs)
     const handleWebStartSong = () => {
         handleSetSong(song.id = 0) // song.id = 0
@@ -26,8 +32,8 @@ export default function Playing() {
     }
     const handleNextSong = () => {
       // Shuffle now works!
-        if($('.rhap_shuffle-button-shuffle-on').css('display') == 'block') { //check if shuffle is on
-          handleSetSong(song.id + 0 - song.id + (Math.floor(Math.random() * 52 + 1)));
+        if($('.rhap_shuffle-button-shuffle-on').css('display') == 'block') { // check if shuffle is on
+          handleSetSong(song.id + 0 - song.id + (Math.floor(Math.random() * 52 + 1))); // the song.id goes randomly
         } else if($('.rhap_shuffle-button').css('display') == 'block') { // if shuffle is off
           handleSetSong(song.id + 1); //return normal function
         }
@@ -39,9 +45,9 @@ export default function Playing() {
         handleSetSong(song.id - 1)
     }
     
-// Auto-croll to playing song in the list
+// Auto-croll to playing song in the playlist
 useEffect(() => {     
-  setTimeout(()=>{ //Fix wrong web decisions (scroll to far)
+  setTimeout(()=>{ // Fix wrong web decisions (scroll to far)
     $("tr.text-teal-400").get(0).scrollIntoView({
       block: 'center',
       behavior: 'smooth',
@@ -49,24 +55,24 @@ useEffect(() => {
    }, 1) //delay 1ms
 }, [song.id]);
 
-// Extra: Shuffle button
+// Shuffle button
 $('.rhap_shuffle-button').click(function () {
-  if($(this).css('display') == 'block') {
-    $(this).css('display', 'none');
-    $('.rhap_shuffle-button-shuffle-on').css('display', 'block');
+  if($(this).css('display') == 'block') { // Check if the non-shuffle button is visible (shuffle: off)
+    $(this).css('display', 'none'); // make it hide
+    $('.rhap_shuffle-button-shuffle-on').css('display', 'block'); // Show the shuffle-on button (shuffle: on)
   }
 });
 
 $('.rhap_shuffle-button-shuffle-on').click(function () {
-  if($(this).css('display') == 'block') {
-    $(this).css('display', 'none');
-    $('.rhap_shuffle-button').css('display', 'block');
+  if($(this).css('display') == 'block') { // Check if the shuffle button is visible (shuffle: on)
+    $(this).css('display', 'none'); // make it hide
+    $('.rhap_shuffle-button').css('display', 'block'); // Show the non-shuffle butoon (shuffle: off)
   }
 });
+// ===> Toggle shuffle function()
 
 
-
-// Prevent the page scrolling when pressed Spacebar
+// Prevent the page from scrolling when pressed Spacebar
 window.addEventListener('keydown', function(e) {
   if(e.keyCode === 32 && e.target === document.body) {
     e.preventDefault();
@@ -99,6 +105,7 @@ window.addEventListener('keydown', function(e) {
     e.preventDefault();
   }
 });
+
 // Shortcut
 document.body.onkeydown = function(e){
   if (e.keyCode == '37') {
@@ -109,15 +116,17 @@ document.body.onkeydown = function(e){
   }
 }
 
-// ------------------------------------ //
-// I spent a lot of fvking time on these 
-// code so please do not copy it.
-//                 -----                //
-// 1| Hover progress container to show the progress-indicator
-// 2| Hover progress container to change the style of filled-progress-bar
-// 3| Hover volumebar area to show the volume-indicator
-// 4| Hover volumebar area to change the style of filled-volume-bar
-window.onload = function onloadFunction() { //load this function onload
+// ----------------------------------------------------------------------- //
+//                If you want to use some of these code                    //
+//                    Give credit to my work pls :3                        // 
+// ----------------------------------------------------------------------- //
+// 1| Hover progress container to show the progress-indicator              //
+// 2| Hover progress container to change the style of filled-progress-bar  //
+// 3| Hover volumebar area to show the volume-indicator                    //
+// 4| Hover volumebar area to change the style of filled-volume-bar        //
+// ----------------------------------------------------------------------- //
+
+window.onload = function onloadFunction() { //load this function onload 
   mainFunction(); //run the mainFunction first
   
   setTimeout(() => {
