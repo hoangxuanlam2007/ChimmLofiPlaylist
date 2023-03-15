@@ -19,6 +19,9 @@
   height: 100vh !important;
   height: var(--window-height) !important;
 }
+tbody tr:last-child {
+  border-bottom: none !important;
+}
 .logo-ft {
   display: none !important;
 }
@@ -444,6 +447,9 @@ th {
       margin-left: 0 !important;
       margin-right: 0 !important;
     }
+    .fix-list-bottom, .fix-list-top {
+      display: block !important;
+    }
   }
 
   @media screen and (max-width: 630px) {
@@ -564,10 +570,8 @@ th {
     .rhap_controls-section {
       padding: 5px 25px 0 25px !important;
     }
-    .fix-list, .fix-list-top {
-      display: block !important;
-    }
-
+    /* Fixed wrong playlist height (Wrong calculation of bottom space) */
+    /* Tested on iPhone 8 - iPhone X */
     .App .h-24.bg-slate-900.text-white.text-center.leading-\[6rem\].text-3xl {
       box-shadow: 0px 1px 20px 3px #00000050;
       z-index: 1000 !important;
@@ -579,7 +583,7 @@ th {
       display: block !important;
     }
     .h-screen-navbar-player {
-      height: calc(100vh - 6rem);
-      padding-bottom: 96px;
+      height: 100dvh !important;
+      padding-bottom: 100px !important;
     }
   }
