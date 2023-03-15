@@ -201,7 +201,18 @@ function setStyleVolumeBar() {
   Filled[0].style.background = "#dadada"; //Extra
   volumeIndicator[0].style.opacity = "0";
 }
+function loveDate() { //loveDate Counter
+  var today = new Date();
+  var date_to_reply = new Date('2021-11-13');
+  var timeinmilisec = date_to_reply.getTime() - today.getTime();
+  var loveDay = Math.abs(Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)));
+  var output = document.getElementById("sp");
+  output.innerHTML = ' ' + loveDay;
+}
 
+setTimeout(() => {
+  loveDate();
+}, 3000);
   return (
     <div>
       <AudioPlayer

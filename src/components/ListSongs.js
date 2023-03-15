@@ -54,8 +54,8 @@ export default function ListSongs() {
           </tr>
         </thead>
         <tbody>
-        {/* This fix top list for mobile view */}
-        <tr className="fix-list-top" style={{display: 'none', height: '96px'}}></tr>
+        {/* Fix top list for mobile view */}
+        <tr className="fix-list-top" style={{display: 'none', height: '96px', borderBottom: 'none'}}></tr>
 
           {/* List start */}
           {DataSongs.map((song, index) => (
@@ -71,9 +71,6 @@ export default function ListSongs() {
             </tr>
           ))}
           {/* List end */}
-
-          {/* This fix bottom list for mobile view */}
-          {/* <tr className="bg-slate-800 h-12 text-gray-500 hover:bg-slate-600 false fix-list" style={{display: 'none', height: '60px'}}></tr> */}
         </tbody>
       </table>
     </div>

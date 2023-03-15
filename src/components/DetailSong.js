@@ -25,7 +25,7 @@ export default function DetailSong() {
             <div style={{margin: '15px 0 15px 0'}} className='m-auto mt-10'>
                 <img className='w-full' src={song.links.images[0].url} />
             </div>
-            <p className='comment-ribbon'>&#127872; <span className='comment'>We've been falling in love for<span className='sp' id='sp'></span>&nbsp;days&nbsp;&#10024;</span> &#127872;</p>
+            <p className='comment-ribbon'>&#127872;&nbsp;<span className='comment'>We've been falling in love for<span className='sp' id='sp'></span>&nbsp;days&nbsp;&#10024;</span> &#127872;</p>
         </div>
     )
 }

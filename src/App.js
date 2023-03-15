@@ -70,8 +70,8 @@ function App() {
           </div>
           <Playing/>
           <div>
-            <p className='comment-ribbon-footer' style={{display: 'none'}}>&#127872;
-              <span className='comment'>We've been falling in love for<span className='sp-footer' id='sp-footer'>
+            <p className='comment-ribbon-footer' style={{display: 'none'}}>&#127872;&nbsp;
+              <span className='comment'> We've been falling in love for<span className='sp-footer' id='sp-footer'>
                 </span>&nbsp;days&nbsp;&#10024;</span> &#127872;
             </p>
           </div>
