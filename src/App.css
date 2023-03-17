@@ -5,19 +5,15 @@
   outline: none !important;
   scroll-behavior: smooth !important;
 }
-.css-yymkrn {
-  text-align: center;
-  background-color: #27282e;
-  display: block;
-  position: absolute;
-  z-index: 9999999;
-  margin: 0 auto;
-  justify-content: center;
-  align-content: center;
-  margin: auto;
-  width: 100% !important;
-  height: 100vh !important;
-  height: var(--window-height) !important;
+.css-dtr75s {
+  display: inline-block !important;
+  position: absolute !important;
+  z-index: 9999999 !important;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 tbody tr:last-child {
   border-bottom: none !important;

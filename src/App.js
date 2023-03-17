@@ -8,7 +8,7 @@ import DataSongs from "./data/songs.json";
 import Playing from "./components/Playing";
 import {welcome} from "./components/Playing";
 import { useState, useEffect } from "react";
-import HashLoader from "react-spinners/HashLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -41,7 +41,6 @@ function App() {
   window.addEventListener('resize', windowHeight);
   windowHeight();
 
-
   const [song, setSong] = useState(DataSongs[0])
 
   const handleSetSong = (idSong) => {
@@ -54,8 +53,8 @@ function App() {
 
   return (
     <div>
-      <div className="loading-container" style={{overflow:'hidden', transition:'none', verticalAlign: 'center'}}>
-        <HashLoader color={'#14bbe7'} loading={loading} size={100}/>
+      <div className="loading-container" style={{overflow:'hidden', transition:'none', verticalAlign: 'center', transform: 'none'}}>
+        <PuffLoader color={'#14bbe7'} loading={loading} size={100}/>
       </div>
 
       <div className="App">
