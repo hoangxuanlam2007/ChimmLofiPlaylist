@@ -55,7 +55,7 @@ function App() {
   return (
     <div>
       <div className="loading-container" style={{overflow:'hidden', transition:'none', verticalAlign: 'center'}}>
-        <HashLoader color={'#363FD7'} loading={loading} size={100}/>
+        <HashLoader color={'#14bbe7'} loading={loading} size={100}/>
       </div>
 
       <div className="App">

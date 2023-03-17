@@ -13,14 +13,14 @@
         }
     },
     {
-        "name": "Khi Ta Yêu Một Ai Đó",
-        "author": "Thaolinh x Freak D",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1084395876690165800/0.mp3",
+        "name": "Có Đâu Ai Ngờ",
+        "author": "Cầm x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086294397148221480/1.mp3",
         "id": 1,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/EgN9qfFj8Zw/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/D3_bfBKsBAg/maxresdefault.jpg"
                 }
             ]
         }
@@ -53,7 +53,7 @@
     },
     {
         "name": "Ánh Sao Và Bầu Trời",
-        "author": "T.R.I x Cá x Minn - 1967 Mix",
+        "author": "T.R.I x Cá x Minn - 1 9 6 7",
         "url": "https://cdn.discordapp.com/attachments/908893799294566400/988306789080633406/3.mp3",
         "id": 4,
         "links": {
@@ -130,10 +130,23 @@
         }
     },
     {
+        "name": "Anh Đánh Rơi Người Yêu Này",
+        "author": "Andiez ft. AMEE x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1085497510841286696/10.mp3",
+        "id": 10,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.ytimg.com/vi/EC64AEHecJ0/maxresdefault.jpg"
+                }
+            ]
+        }
+    },
+    {
         "name": "0 Cần Mật", 
         "author": "Fous ft. UMIE x Quanvrox",
         "url": "https://cdn.discordapp.com/attachments/908893799294566400/990103361544142938/10.mp3",
-        "id": 10,
+        "id": 11,
         "links": {
             "images": [
                 {
@@ -143,53 +156,40 @@
         }
     },
     {
-        "name": "Sao Em Không Rep?",
-        "author": "Daduc x Dagiam x Zeaplee",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/994997511053901864/12.mp3",
-        "id": 11,
-        "links": {
-            "images": [
-                {
-                    "url": "https://i.ytimg.com/vi/Kbm1E1mniYg/maxresdefault.jpg"
-                }
-            ]
-        }
-    },
-    {
-        "name": "Bài Ca Em Và Gió",
-        "author": "Dwongg x Zeaplee x 1967",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/988308676194488320/4.mp3",
+        "name": "Nụ Cười Em Là Nắng",
+        "author": "Green x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1085498888863088650/12.mp3",
         "id": 12,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/0WP7qvFNF1Q/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/QzAB0B8XMIY/maxresdefault.jpg"
                 }
             ]
         }
     },
     {
-        "name": "Bây Giờ Là Tháng Mấy",
-        "author": "Vũ Mạnh Cường x Zeaplee",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/988358205526663228/12.mp3",
+        "name": "Dành Cho Em",
+        "author": "Hekii x Orinn St. Hoàng Tôn",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1085500719634857994/13.mp3",
         "id": 13,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/kFA_h6QipSo/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/EYZZ7wZJ7uQ/maxresdefault.jpg"
                 }
             ]
         }
     },
     {
         "name": "Chỉ Muốn Bên Em Thật Gần",
-        "author": "Y Ling x Nguyễn Minh Phúc x Orinn",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990142277211017286/50.mp3",
+        "author": "Y Ling x Nguyễn Minh Phúc x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086308972157485116/14.mp3",
         "id": 14,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/O8TygqyYpAc/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/U1Z8v6yRkR0/maxresdefault.jpg"
                 }
             ]
         }
@@ -221,27 +221,27 @@
         }
     },
     {
-        "name": "Rung Động",
-        "author": "Dương Edward x Zeaplee",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/988365756146253834/17.mp3",
+        "name": "Tình Đã Đầy Một Tim",
+        "author": "Huyền Tâm Môn x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086298850068807721/17.mp3",
         "id": 17,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/NDq-xogy_W8/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/3WNw1hfFqE4/maxresdefault.jpg"
                 }
             ]
         }
     },
     {
-        "name": "Ánh Chiều Tàn",
-        "author": "D Empty ft. Poll",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/956928816532566126/49.mp3",
+        "name": "Thế Giới Trong Em (Ver2)",
+        "author": "Hương Ly x Quanvrox",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086310865147539556/18.mp3",
         "id": 18,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/uaz20dK8pDQ/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/nrCI8OVp0go/maxresdefault.jpg"
                 }
             ]
         }
@@ -260,21 +260,21 @@
         }
     },
     {
-        "name": "Sự Im Lặng",
-        "author": "Trịnh Thiên Ân x Minn",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/988347152071807006/8.mp3",
+        "name": "Mặt Mộc",
+        "author": "Phạm Nguyên Ngọc x VAnh x Ân x Nhi x sin",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086317326200213636/51.mp3",
         "id": 20,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/MhNak3WrtKY/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/uTJ3BPoySeY/maxresdefault.jpg"
                 }
             ]
         }
     },
     {
         "name": "Muộn Rồi Mà Sao Còn",
-        "author": "Sơn Tùng M-TP x 1967 Lofi",
+        "author": "Sơn Tùng M-TP x 1 9 6 7",
         "url": "https://cdn.discordapp.com/attachments/908893799294566400/962622593876262912/21.mp3",
         "id": 21,
         "links": {
@@ -312,14 +312,14 @@
         }
     },
     {
-        "name": "Phải Làm Sao Để Níu Kéo Một Người",  
-        "author": "Sean x Tweny x CM1X",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990105318946115654/24.mp3",
+        "name": "Phố Đã Lên Đèn",  
+        "author": "Huyền Tâm Môn x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086299886057689168/24.mp3",
         "id": 24,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/gwLMPfipVrY/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/_9qeRb83D8s/maxresdefault.jpg"
                 }
             ]
         }
@@ -351,27 +351,53 @@
         }
     },
     {
-        "name": "Học Cách Yêu Bản Thân", 
-        "author": "Bille x HouKong x Quanvrox",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990106807416541194/27.mp3",
+        "name": "Lần Hẹn Hò Đầu Tiên", 
+        "author": "Huyền Tâm Môn x Chang",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086300834872176661/27.mp3",
         "id": 27,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/9ZFlLb8x8D4/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/ISpeaH7TOcw/maxresdefault.jpg"
                 }
             ]
         }
     },
     {
-        "name": "Ai Chung Tình Được Mãi",
-        "author": "Đinh Tùng Huy x Quanvrox",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/956920653158682634/28.mp3",
+        "name": "3107-2",
+        "author": "DuongG x Nâu x W/n x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086301273374076969/28.mp3",
         "id": 28,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/QuVFPya2vNY/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/SdUH8uFHYr8/maxresdefault.jpg"
+                }
+            ]
+        }
+    },
+    {
+        "name": "3107-3",
+        "author": "W/n ft. Duongg & Nâu & Titie x Daz - 1 9 6 7",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086302266702696498/30.mp3",
+        "id": 29,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.ytimg.com/vi/yXdFeCtPqZs/maxresdefault.jpg"
+                }
+            ]
+        }
+    },
+    {
+        "name": "3107-4",
+        "author": "W/n x Erik ft Nâu x meChill",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086302764004544512/30.mp3",
+        "id": 30,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.ytimg.com/vi/IVYWTu-TlHA/maxresdefault.jpg"
                 }
             ]
         }
@@ -380,37 +406,11 @@
         "name": "Someday",
         "author": "Summer Vee x Quanvrox",
         "url": "https://cdn.discordapp.com/attachments/908893799294566400/990107152146366484/29.mp3",
-        "id": 29,
-        "links": {
-            "images": [
-                {
-                    "url": "https://i.ytimg.com/vi/rtk-fPFobN0/maxresdefault.jpg"
-                }
-            ]
-        }
-    },
-    {
-        "name": "Tàn Nhẫn",
-        "author": "Lương Minh Trang x Minn",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/956924709017096202/30.mp3",
-        "id": 30,
-        "links": {
-            "images": [
-                {
-                    "url": "https://i.ytimg.com/vi/c8tDXalbW_I/maxresdefault.jpg"
-                }
-            ]
-        }
-    },
-    {
-        "name": "Chúng Ta Từng Có Nhau",
-        "author": "Lil Z Poet x Ryan",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/956924703832965150/31.mp3",
         "id": 31,
         "links": {
             "images": [
                 {
-                    "url": "https://is4-ssl.mzstatic.com/image/thumb/Music116/v4/6b/a9/94/6ba99411-099e-e6ae-45d6-54c373029e47/622c0585-077b-4a65-a2d5-05a093a510cd.jpg/600x600bf-60.jpg"
+                    "url": "https://i.ytimg.com/vi/rtk-fPFobN0/maxresdefault.jpg"
                 }
             ]
         }
@@ -429,20 +429,20 @@
         }
     },
     {
-        "name": "Sau Lưng Anh Có Ai Kìa",  
-        "author": "Thiều Bảo Trâm x Freak D",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990110184414265354/33.mp3",
+        "name": "Tình Yêu Màu Hồng",  
+        "author": "Hồ Văn Quý x Xám x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086303481884852406/33.mp3",
         "id": 33,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/5z8A5WmIKOk/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/n64YXVudU1o/maxresdefault.jpg"
                 }
             ]
         }
     },
     {
-        "name": "Nói Với Anh Đôi Lời ",
+        "name": "Nói Với Anh Đôi Lời",
         "author": "Đức Ứng x Quanvrox",
         "url": "https://cdn.discordapp.com/attachments/908893799294566400/990108868187140096/34.mp3",
         "id": 34,
@@ -494,66 +494,66 @@
         }
     },
     {
-        "name": "Cứ Nói Yêu Lần Này",
-        "author": "Lil Zpoet x Dứa",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/956924708044046376/38.mp3",
+        "name": "Ngày Đầu Tiên",
+        "author": "Đức Phúc x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086304984125153350/38.mp3",
         "id": 38,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/km79wcqYEOM/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/etFgEgCJBXo/maxresdefault.jpg"
                 }
             ]
         }
     },
     {
-        "name": "Có Không Giữ Mất Đừng Tìm",
-        "author": "Trúc Nhân ft. Quanvrox",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990109393737633842/39.mp3",
+        "name": "Em Khác Gì Hoa",
+        "author": "Lil Zpoet x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086306468283813908/39.mp3",
         "id": 39,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/Ui68KI60j9Y/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/SfUKM0K13j8/maxresdefault.jpg"
                 }
             ]
         }
     },
     {
-        "name": "Khác Biệt To Lớn Hơn",
-        "author": "Trịnh Thăng Bình ft. Liz Kim Cương x Quanvrox",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/995000850487459990/51.mp3",
+        "name": "Dịu Dàng Yêu",
+        "author": "Đào Duy Quý x Lil'Wuan x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086309548417097748/40.mp3",
         "id": 40,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/FtXT_Cut0Zw/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/TpF9vopIPZY/maxresdefault.jpg"
                 }
             ]
         }
     },
     {
-        "name": "Ôm Em Lần Cuối",
-        "author": "Nit x Sing x Dứa",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/956928817744732180/41.mp3",
+        "name": "Ghé Vào Tai",
+        "author": "UMIE x Freaky x Hổ x Quanvrox",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086311926134493245/41.mp3",
         "id": 41,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/e8O4iZgWdGI/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/e5gAfiy7Qb0/maxresdefault.jpg"
                 }
             ]
         }
     },
     {
-        "name": "Kẻ Cô Đơn Trong Thành Phố",
-        "author": "Khải x Freak D",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990811516427182100/0.mp3",
+        "name": "Tình Yêu Khủng Long",
+        "author": "FAY x Minn x 1 9 6 7",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086313520360075384/42.mp3",
         "id": 42,
         "links": {
             "images": [
                 {
-                    "url": "https://pic-bstarstatic.akamaized.net/ugc/d9a7da03f2f08c5bd300ddd7a86e0d8d1b5dda97.jpg"
+                    "url": "https://i.ytimg.com/vi/NY5y6qd2Eic/maxresdefault.jpg"
                 }
             ]
         }
@@ -585,14 +585,14 @@
         }
     },
     {
-        "name": "Sau Ngày Chia Tay",
-        "author": "Luke D x Freak D",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990125847493115954/45.mp3",
+        "name": "Cứ Nói Yêu Lần Này",
+        "author": "Lil Z Poet x Zeaplee x 1 9 6 7",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086314418658345061/45.mp3",
         "id": 45,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/JNGEy5JyG7I/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/P_xFZx2tyoQ/maxresdefault.jpg"
                 }
             ]
         }
@@ -611,14 +611,14 @@
         }
     },
     {
-        "name": "Anh Biết Em Cũng Biết",
-        "author": "Ngơ ft. Hnhngan x Ryan",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/956928820642975754/47.mp3",
+        "name": "Tình Em Là Đại Dương",
+        "author": "Hoàng Dũng x Grey D x Zeaplee",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1006575136557777077/3.mp3",
         "id": 47,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/waX6HEgy4NE/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/qINKacUxKW0/maxresdefault.jpg"
                 }
             ]
         }
@@ -637,40 +637,40 @@
         }
     },
     {
-        "name": "Mập Mờ",
-        "author": "Phí Phương Anh x Zeaplee",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/956928816947818537/50.mp3",
+        "name": "Yêu Thương Quay Về",
+        "author": "Young D x B.O.T x Quanvrox",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086316175765540936/49.mp3",
         "id": 49,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/ZMNfnprp3lE/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/IPTwAMCi6l4/maxresdefault.jpg"
                 }
             ]
         }
     },
     {
-        "name": "Chúng Ta Làm Bạn Được Không",
-        "author": "Thiều Bảo Trâm x Freak D",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990124330828591154/40.mp3",
+        "name": "Em Là Nhất",
+        "author": "Kis x Hoàng Kaylee x Yahy x Quanvrox",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086318125118668960/50.mp3",
         "id": 50,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/cw-s17AXTGE/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/Kswfik0QloU/maxresdefault.jpg"
                 }
             ]
         }
     },
     {
-        "name": "Anh Yêu Vội Thế",
-        "author": "LaLa Trần x Freak D",
-        "url": "https://cdn.discordapp.com/attachments/908893799294566400/990127527555112990/49.mp3",
+        "name": "Lạc Vào Trong Mơ",
+        "author": "Simon C x Wuy x Freak D",
+        "url": "https://cdn.discordapp.com/attachments/908893799294566400/1086297703278968942/17.mp3",
         "id": 51,
         "links": {
             "images": [
                 {
-                    "url": "https://i.ytimg.com/vi/OMTnQdoWvLM/maxresdefault.jpg"
+                    "url": "https://i.ytimg.com/vi/dH1QtM8mss0/maxresdefault.jpg"
                 }
             ]
         }
