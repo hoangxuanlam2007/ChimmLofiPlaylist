@@ -31,7 +31,7 @@ export default function Playing() {
         handleSetSong(song.id + 0) // make the browser think that user just change the song so that we can now able to use shortcuts to control the player
     }
     const handleNextSong = () => {
-      // Shuffle now works!
+      // Shuffle when song ended
         if($('.rhap_shuffle-button-shuffle-on').css('display') == 'block') { // check if shuffle is on
           handleSetSong(song.id + 0 - song.id + (Math.floor(Math.random() * 52 + 1))); // the song.id goes randomly
         } else if($('.rhap_shuffle-button').css('display') == 'block') { // if shuffle is off
@@ -39,7 +39,12 @@ export default function Playing() {
         }
     }
     const handleClickNext = () => {
-        handleSetSong(song.id + 1)
+      // Shuffle when click next
+        if($('.rhap_shuffle-button-shuffle-on').css('display') == 'block') { // check if shuffle is on
+          handleSetSong(song.id + 0 - song.id + (Math.floor(Math.random() * 52 + 1))); // the song.id goes randomly
+        } else if($('.rhap_shuffle-button').css('display') == 'block') { // if shuffle is off
+          handleSetSong(song.id + 1); //return normal function
+        }
     }
     const handleClickPre = () => {
         handleSetSong(song.id - 1)
@@ -218,7 +223,7 @@ setTimeout(() => {
       <AudioPlayer
         className="player-music"
         src={song.url}
-        volume={0.3}
+        volume={0.2}
         hasDefaultKeyBindings={false}
         layout="stacked-reverse"
         showSkipControls={true}
