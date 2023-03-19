@@ -70,10 +70,23 @@ body, .text-cyan-500, br {
 }
 .swal2-html-container {
   text-align: left !important;
-  padding: 0 0 0 50px !important;
-  overflow: unset !important;
+  padding: 0 50px !important;
+  overflow: hidden !important;
+  margin: auto;
   color: #8b949e;
   white-space: nowrap;
+}
+.shortcut-header {
+  white-space: pre-line;
+}
+.shortcut-des {
+  text-align: center !important;
+  display: block !important;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #00000085;
+  background-color: rgba(201, 201, 201, 0.1);
+  padding: 0.2em 0.4em;
 }
 @media screen and (max-width: 615px) {
   .swal2-html-container {
@@ -101,11 +114,11 @@ body, .text-cyan-500, br {
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(201, 201, 201, 0.397);
+  background-color: rgba(201, 201, 201, 0.25);
   border-radius: 5px;
 }
 .normalshortcut {
-  background-color: rgba(201, 201, 201, 0.397);
+  background-color: rgba(201, 201, 201, 0.25);
   margin: auto 5px;
   font-size: 85%;
   border-right: 3px solid #14bbe7 !important;
