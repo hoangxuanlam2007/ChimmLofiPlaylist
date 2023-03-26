@@ -54,23 +54,23 @@ export default function ListSongs() {
           </tr>
         </thead>
         <tbody>
-        {/* Fix top list for mobile view */}
-        <tr className="fix-list-top" style={{display: 'none', height: '96px', borderBottom: 'none'}}></tr>
+          {/* Fix top list for mobile view */}
+          <tr className="fix-list-top" style={{display: 'none', height: '96px', borderBottom: 'none'}}></tr>
 
-          {/* List start */}
-          {DataSongs.map((song, index) => (
-            <tr
-              key={index}
-              className={`bg-slate-800 h-12 text-gray-500 hover:bg-slate-600 ${idSong === song.id && 'bg-slate-600 text-teal-400'}`}
-              onClick={() => handlePlaySong(song.id)}
-            >
-              <td className="text-center" style={{borderBottom: 'none', textAlign: 'left'}}>{index + 1}</td>
-              <td className="song-name" id="song-name">{song.name}</td>
-              <td className="text-center" id="song-author">{song.author}</td>
-              <td className="text-center"><FaCompactDisc style={{margin: '-3px auto auto auto', fontSize: '20px'}} /></td>
-            </tr>
-          ))}
-          {/* List end */}
+            {/* List start */}
+            {DataSongs.map((song, index) => (
+              <tr
+                key={index}
+                className={`bg-slate-800 h-12 text-gray-500 hover:bg-slate-600 ${idSong === song.id && 'bg-slate-600 text-teal-400'}`}
+                onClick={() => handlePlaySong(song.id)}
+              >
+                <td className="text-center" style={{borderBottom: 'none', textAlign: 'left'}}>{index + 1}</td>
+                <td className="song-name" id="song-name">{song.name}</td>
+                <td className="text-center" id="song-author">{song.author}</td>
+                <td className="text-center"><FaCompactDisc style={{margin: '-3px auto auto auto', fontSize: '20px'}} /></td>
+              </tr>
+            ))}
+            {/* List end */}
         </tbody>
       </table>
     </div>

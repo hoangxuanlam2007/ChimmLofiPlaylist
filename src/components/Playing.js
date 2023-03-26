@@ -259,13 +259,14 @@ export default function Playing() {
             onClickPrevious={handleClickPre}
             customAdditionalControls={
               [
+                <span className="footer"><span className="para-cre">by <a href="https://www.facebook.com/chimmywnhatt/" target={"_blank"} style={{color: '#f27474'}}>Lâm&#123;&#125;</a> with <span className="love-icon"></span></span></span>,
                 RHAP_UI.LOOP,
                 <button aria-label="Enable shuffle" className="rhap_button-clear rhap_shuffle-button" type="button">
                   <MdOutlineShuffle />
                 </button>,
                 <button aria-label="Enable shuffle" className="rhap_button-clear rhap_shuffle-button-shuffle-on" id="shuffle" type="button">
                   <MdOutlineShuffleOn />
-                </button>
+                </button>,
               ]
             }
             customIcons={{
