@@ -2,6 +2,9 @@
 //                          Give me a starr !!                             //
 //                           Wrote by Chimmyw                              // 
 // ----------------------------------------------------------------------- //
+// chimmywlofiplaylist v2.0.0
+// Xuân Lâm - 29/03/2023 - 501 Days of Love
+// @hoangxuanlam2007
 
 import React, { useContext, useEffect } from "react";
 import AudioPlayer from "react-h5-audio-player";
@@ -10,7 +13,6 @@ import { Songs } from "../Context";
 import Swal from 'sweetalert2';
 import { RHAP_UI } from 'react-h5-audio-player';
 import $ from 'jquery'; // jQuery imported
-import random from 'simple-random-number-generator';
 
 // Icons
 import { BsPlayFill } from "react-icons/bs";
@@ -253,6 +255,7 @@ export default function Playing() {
             showFilledVolume={true}
             showDownloadProgress={false}
             autoPlay={false}
+            onLoadedMetaData={event => console.log(event.target.duration)}
             preload="metadata"
             onEnded={handleNextSong}
             onClickNext={handleClickNext}
@@ -283,6 +286,7 @@ export default function Playing() {
         </div>
       );
     }
+
 
       // --------------------------- //
       //        Welcome dialog       //

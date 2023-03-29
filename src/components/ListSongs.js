@@ -8,6 +8,14 @@ import { BsPeopleFill } from "react-icons/bs";
 import { IoMdMusicalNote } from "react-icons/io";
 import { FaCompactDisc } from "react-icons/fa";
 
+// iOS & Android Now Playing on Notification Center
+// There's still no available method for this using React
+// Maybe If I move to react-native?
+
+// chimmywlofiplaylist v2.0.0
+// Xuân Lâm - 29/03/2023 - 501 Days of Love
+// @hoangxuanlam2007
+
 export default function ListSongs() {
   const { DataSongs, handleSetSong, song } = useContext(Songs);
   const [idSong, setidSong] = useState(0);
@@ -37,6 +45,7 @@ export default function ListSongs() {
   window.onload = function() { //load this function onload
     killFunkySVG();
   }
+
   // ---------------------------------------- //
 
   useEffect(() => {

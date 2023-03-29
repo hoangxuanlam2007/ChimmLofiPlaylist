@@ -120,6 +120,7 @@ body, .text-cyan-500, br {
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 .para-cre {
   font-size: 14px;
+  word-spacing: 1px;
   position: relative;
   vertical-align: middle;
   line-height: 10px;
@@ -154,7 +155,7 @@ body, .text-cyan-500, br {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  filter: drop-shadow(0 0 5px #fa7474da);
+  filter: drop-shadow(0 0 5px #fa74749f);
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
    -khtml-user-select: none; /* Konqueror HTML */
@@ -427,7 +428,7 @@ th {
   font-family: 'Lato', sans-serif;
   margin-top: 20px;
   font-size: 16px;
-  word-spacing: 0px;
+  word-spacing: 2px;
   font-weight: 400;
   color: #f3f3f3;
   text-shadow: 0 0 3px #ffffff65, 0 0 8px #ffffff42, 0 0 20px #ffffff2f;
