@@ -1,19 +1,6 @@
 import React, { useContext } from 'react';
 import { Songs } from '../Context';
 
-function loveDate() { //loveDate Counter
-    var today = new Date();
-    var date_to_reply = new Date('2021-11-13');
-    var timeinmilisec = date_to_reply.getTime() - today.getTime();
-    var loveDay = Math.abs(Math.ceil(timeinmilisec / (1000 * 60 * 60 * 24)));
-    var output = document.getElementById("sp");
-    output.innerHTML = ' ' + loveDay + ' days';
-}
-
-setTimeout(() => {
-    loveDate();
-  }, 3000);
-
 export default function DetailSong() {
     const {song} = useContext(Songs)
     return (
@@ -25,7 +12,6 @@ export default function DetailSong() {
             <div style={{margin: '15px 0 15px 0'}} className='m-auto mt-10'>
                 <img className='w-full' src={song.links.images[0].url} />
             </div>
-            <p className='comment-ribbon'>&#127872;&nbsp;<span className='comment'>We've been falling in love for<span className='sp' id='sp'></span>&#10024;</span>&#127872;</p>
             <p className="cre"><span className="p-cre">Hand-crafted with <span className="love-icon"></span> by <a href="https://www.facebook.com/chimmywnhatt/" target={"_blank"} style={{color: '#f27474'}}>Lâm</a></span></p>
         </div>
     )
