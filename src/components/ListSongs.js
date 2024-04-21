@@ -13,7 +13,6 @@ import { FaCompactDisc } from "react-icons/fa";
 // Maybe If I move to react-native?
 
 // chimmlofiplaylist v2.0.0
-// Xuân Lâm - 29/03/2023 - 501 Days of Love
 // @hoangxuanlam2007
 
 export default function ListSongs() {
