@@ -12,7 +12,7 @@ import { FaCompactDisc } from "react-icons/fa";
 // There's still no available method for this using React
 // Maybe If I move to react-native?
 
-// chimmywlofiplaylist v2.0.0
+// chimmlofiplaylist v2.0.0
 // Xuân Lâm - 29/03/2023 - 501 Days of Love
 // @hoangxuanlam2007
 
