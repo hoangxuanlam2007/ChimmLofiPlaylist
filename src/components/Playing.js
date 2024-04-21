@@ -1,9 +1,8 @@
 // ----------------------------------------------------------------------- //
 //                          Give me a starr !!                             //
-//                           Wrote by Chimmyw                              // 
+//                           Wrote by Chimm                                // 
 // ----------------------------------------------------------------------- //
-// chimmywlofiplaylist v2.0.0
-// Xuân Lâm - 29/03/2023 - 501 Days of Love
+// chimmlofiplaylist v2.0.0
 // @hoangxuanlam2007
 
 import React, { useContext, useEffect } from "react";
