@@ -261,7 +261,7 @@ export default function Playing() {
             onClickPrevious={handleClickPre}
             customAdditionalControls={
               [
-                <span className="footer"><span className="para-cre">by <a href="https://www.facebook.com/chimmywnhatt/" target={"_blank"} style={{color: '#f27474'}}>Lâm&#123;&#125;</a> with <span className="love-icon"></span></span></span>,
+                <span className="footer"><span className="para-cre">by <a href="https://www.facebook.com/xuanlam.ne/" target={"_blank"} style={{color: '#f27474'}}>Lâm&#123;&#125;</a> with <span className="love-icon"></span></span></span>,
                 RHAP_UI.LOOP,
                 <button aria-label="Enable shuffle" className="rhap_button-clear rhap_shuffle-button" type="button">
                   <MdOutlineShuffle />
@@ -294,7 +294,7 @@ export default function Playing() {
     export const welcome = () => {
       Swal.fire({
         title: "Chimm Lo-fi Playlist", 
-        html: "<div class='shortcut-des'>Cho mình 1⭐ trên <a href='https://github.com/hoangxuanlam2007/ChimmywLofiPlaylist' target='_blank' style='color: #26c6d1; text-decoration: underline !important'>github</a> nhé ^^</div><span class='shortcut-header'>Phím tắt 💻:</span></br><span class='shortcut'><span class='btnshort'><--</span>:<span class='normalshortcut'>Bài trước</span></br><span class='btnshort'>--></span>:<span class='normalshortcut'>Bài sau</span></br><span class='btnshort'>[dấu cách]</span>:<span class='normalshortcut'>Dừng/Phát nhạc</span></span>",  
+        html: "<div class='shortcut-des'>Cho mình 1⭐ trên <a href='https://github.com/hoangxuanlam2007/ChimmLofiPlaylist' target='_blank' style='color: #26c6d1; text-decoration: underline !important'>github</a> nhé ^^</div><span class='shortcut-header'>Phím tắt 💻:</span></br><span class='shortcut'><span class='btnshort'><--</span>:<span class='normalshortcut'>Bài trước</span></br><span class='btnshort'>--></span>:<span class='normalshortcut'>Bài sau</span></br><span class='btnshort'>[dấu cách]</span>:<span class='normalshortcut'>Dừng/Phát nhạc</span></span>",  
         showConfirmButton: 'true',
         confirmButtonText: `Được thôi!`,
       })
